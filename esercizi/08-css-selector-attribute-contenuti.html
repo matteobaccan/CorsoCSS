@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>Titolo della pagina</title>
+  <style>
+    p[test2~=pippo] {
+      color: red;
+    }
+
+    p[test2|=pluto] {
+      color: green;
+    }
+
+    p[test2^=paperino] {
+      color: blue;
+    }
+
+    p[test2$=paperoga] {
+      color: magenta;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p test2="pippotto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p test2="pippo pluto paperino">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <p test2="pluto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p test2="pluto-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p test2="plutone">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <p test2="paperino">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p test2="paperino2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <p test2="paperoga">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p test2="testpaperoga">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+</body>
+
+</html>

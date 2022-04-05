@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>Titolo della pagina</title>
+  <style>
+    p[test1] {
+      color: red;
+    }
+
+    p[test2=pippo] {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p test1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p test2="pluto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p test2="pippo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+</body>
+
+</html>
