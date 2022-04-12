@@ -4,17 +4,14 @@
 <head>
   <title>Titolo della pagina</title>
   <style>
-    div:hover {
-      background-color: red;
-    }
+div:hover {
+  background-color: red;
+}
 
-    li:first-child {
-      color: red;
-    }
-
-    p::first-letter {
-      font-size: 30px;
-    }
+input:focus {
+  background-color: red;
+  border: 10px solid black;
+}
   </style>
 </head>
 
@@ -27,9 +24,12 @@
       <li>Secondo elemento</li>
       <li>Terzo elemento</li>
     </ul>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
+  <form>
+    Nome <input type="text" name="nome"><br />
+    Cognome <input type="text" name="cognome"><br />
+    Indirizzo <input type="text" name="indirizzo"><br />
+  </form>
 </body>
 
 </html>
