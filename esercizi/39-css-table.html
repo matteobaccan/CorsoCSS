@@ -6,7 +6,7 @@
   <style>
     table {
       width: 100%;
-      xxborder: 1px solid black;
+      border: 1px solid black;
     }
 
     td,
@@ -14,27 +14,31 @@
       border: 1px solid black;
     }
 
-    td {
+    table.uno td {
       padding: 10px;
+    }
+
+    table.due td {
+      padding: 100px;
     }
 
     th {
       text-align: left;
     }
 
-    tr:hover {
+    tbody tr:hover {
       background-color: red;
     }
 
     tr:nth-child(even) {
-      background-color: blue;
+      background-color: grey;
     }
   </style>
 </head>
 
 <body>
 
-  <table>
+  <table class="uno">
     <thead>
       <tr>
         <th>Colonna 1</th>
@@ -46,6 +50,19 @@
         <td>Dato 1</td>
         <td>Dato 2</td>
       </tr>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+
     </tbody>
     <tfoot>
       <tr>
@@ -55,6 +72,39 @@
     </tfoot>
   </table>
 
+  <table class="due">
+    <thead>
+      <tr>
+        <th>Colonna 1</th>
+        <th>Colonna 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+      </tr>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Piede 1</td>
+        <td>Piede 2</td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
 
 </html>
