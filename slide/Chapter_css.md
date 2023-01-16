@@ -637,9 +637,9 @@ __max-width:__ larghezza massima
 
 __min-width:__ larghezza minima
 
-__max-heigth:__ altezza massima
+__max-height:__ altezza massima
 
-__min-heigth:__ altezza minima
+__min-height:__ altezza minima
 
 ---
 
@@ -673,7 +673,7 @@ Esternamente al __border__, senza interferire con il dimensionamento del __margi
 
 __outline-style__: ha gli stessi stili di border
 
-__outline-color__: indica il colore dell’outine
+__outline-color__: indica il colore dell’outline
 
 __outline-width__: la dimensione dell’outline
 
@@ -850,7 +850,7 @@ nei nostri progetti
 
 L’utilizzo di icone permette di rendere più intuitive le pagine.
 
-Oltrea alle icone google ci sono molte alternative in rete, come quelle fornite da fontawesome <https://fontawesome.com/>
+Oltre a alle icone google ci sono molte alternative in rete, come quelle fornite da fontawesome <https://fontawesome.com/>
 
 \<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -862,9 +862,7 @@ Fonte: <https://fontawesome.com/icons/>
 
 # CSS link
 
-Il tag __a__ può essere personalizzato in base allo stato del link, utilizzando le
-
-proprietà che vengono usati per i testi.
+Il tag __a__ può essere personalizzato in base allo stato del link, utilizzando le proprietà che vengono usati per i testi.
 
 Gli stati condizionabili dei link sono
 
@@ -921,7 +919,7 @@ __color:__ \<colore>
 __height:__ <larghezza: ex 100px su TH>
 __border-collapse:__ collapse; /\* su table condensa il bordo in uno solo \*/
 __text-align__: center; /\* su TD con center, left, right \*/
-__tr:hover{ backgroud-color: red; }__ /\* per evidenziare la riga corrente \*/
+__tr:hover{ background-color: red; }__ /\* per evidenziare la riga corrente \*/
 __tr:nth-child(even) {background-color: grey;}__ /\* Alternare la righe \*/
 
 ---
@@ -1042,7 +1040,7 @@ La proprietà __overflow__ controlla cosa succede al contenuto che è troppo gra
 
 I valori che può assumere sono:
 
-__visible__ – Rappresenta il default: il contenuto non è tagliato ed esce dall’area
+__visible__ – Rappresenta il default: il contenuto non è tagliato ed esce dall'area
 
 __hidden__ – Viene ritagliato e visualizzato solo quanto presente in area
 
