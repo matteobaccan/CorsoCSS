@@ -199,7 +199,7 @@ I __selector__ semplici selezionano gli elementi in base a nome, id, classe
 
 # CSS selector universale
 
-Per convenzione esiste il selector __\__* che indica che le proprietà indicate devono essere applicate a qualsiasi __tag__
+Per convenzione esiste il selector __\*__ che indica che le proprietà indicate devono essere applicate a qualsiasi __tag__
 
     * {
         color: green;
@@ -387,7 +387,7 @@ __selector[attributo\*=valore]__ {
 
 All’interno di un CSS è possibile inserire dei commenti
 
-I commenti sono multiriga, iniziano con __/\__* e terminano con __\*/__
+I commenti sono multiriga, iniziano con __/\*__ e terminano con __\*/__
 
 selector {
     proprietà: valore; __/\* commento \*/__
@@ -607,6 +607,10 @@ Anche in questo caso è possibile indicare i singoli bordi sui quali applicare i
 
 # CSS margin
 
+![width:300px](img/margin-left-25px-everyone-should-know-css-45632524.png)
+
+<https://me.me/i/margin-left-25px-everyone-should-know-css-a2abdd33f2b5499ba28fa8afab9dfc2b>
+
 ---
 
 # CSS padding
@@ -641,6 +645,10 @@ __min-heigth:__ altezza minima
 
 # CSS height width
 
+![width:300px](img/tumblr_5c1b8951fc2aea4ea5f2f1d7490ccc8a_0296c7a6_1280.jpg)
+
+<https://programmerhumour.tumblr.com/post/643187358740725760/css-cat>
+
 ---
 
 # CSS box model
@@ -650,6 +658,12 @@ Il termine "box model" viene utilizzato per indicare il design e layout.
 Il box model è il riquadro che avvolge ogni elemento HTML, costituito da
 
 __margin__, __border__, __padding__ e contenuto.
+
+---
+
+![width:800px](img/CSS-box-model.jpg)
+
+<https://www.webcodzing.com/css-box-model/>
 
 ---
 
@@ -765,7 +779,7 @@ __fantasy__: sono caratteri decorativi/giocosi.
 
 # CSS font - esempi
 
-Esempi di font
+![width:900px](img/font.png)
 
 ---
 
@@ -870,17 +884,17 @@ Le liste html possono essere __ordered__ (ol) e __unordered__ (ul).
 
 Questi tipi di lista possono essere personalizzate tramite __list-style-type__
 
-__list-style-type__: circle;
+- __list-style-type__: circle;
 
-__list-style-type__: square;
+- __list-style-type__: square;
 
-__list-style-type__: upper-roman;
+- __list-style-type__: upper-roman;
 
-__list-style-type__: lower-alpha;
+- __list-style-type__: lower-alpha;
 
 __list-style-image:__ referenzia una immagine da unire alla voce
 
-__list-style-image__: url('dot.gif');
+- __list-style-image__: url('dot.gif');
 
 ---
 
@@ -898,28 +912,16 @@ __list-style-position__: outside;
 
 # CSS table
 
-Le tabelle hanno un gran numero di personalizzazioni basate sulla loro struttura
-
-e caratteristiche delle celle e delle colonne. Le principali personalizzazioni sono
-
-fattibili su
+Le tabelle hanno un gran numero di personalizzazioni basate sulla loro struttura e caratteristiche delle celle e delle colonne. Le principali personalizzazioni sono fattibili su
 
 __border__: \<caratteristiche di bordo>
-
 __padding__: 10px; /\* su TH e TD \*/
-
 __width:__ \<larghezza: ex 100%>
-
 __color:__ \<colore>
-
 __height:__ <larghezza: ex 100px su TH>
-
 __border-collapse:__ collapse; /\* su table condensa il bordo in uno solo \*/
-
 __text-align__: center; /\* su TD con center, left, right \*/
-
 __tr:hover{ backgroud-color: red; }__ /\* per evidenziare la riga corrente \*/
-
 __tr:nth-child(even) {background-color: grey;}__ /\* Alternare la righe \*/
 
 ---
@@ -966,15 +968,11 @@ dell’elemento all’interno della larghezza di pagina
 
 La proprietà __position__ indica il tipo di posizionamento utilizzato per un elemento
 
-static
-
-relative
-
-fixed
-
-absolute
-
-sticky
+- static
+- relative
+- fixed
+- absolute
+- sticky
 
 Ogni posizionamento ha delle proprie caratteristiche
 
@@ -986,9 +984,7 @@ L’impostazione __static__ è il valore predefinito degli elementi HTML
 
 Gli elementi __static__ non sono interessati dalle proprietà top, bottom, left e right
 
-Un elemento con posizione __static__ non è posizionato secondo il normale flusso
-
-della pagina
+Un elemento con posizione __static__ non è posizionato secondo il normale flusso della pagina
 
 ---
 
@@ -996,27 +992,19 @@ della pagina
 
 Un elemento __relative__ è posizionato rispetto alla sua posizione normale
 
-L'impostazione delle proprietà __top, bottom, left__ e __right__ sposterà l’elemento
+L'impostazione delle proprietà __top, bottom, left__ e __right__ sposterà l’elemento dalla sua posizione normale
 
-dalla sua posizione normale
-
-Gli altri contenuti non verranno adattati per adattarsi a eventuali spazi vuoti
-
-lasciati dall'elemento
+Gli altri contenuti non verranno adattati per adattarsi a eventuali spazi vuoti lasciati dall'elemento
 
 ---
 
 # CSS position fixed
 
-Un elemento __fixed__ è posizionato rispetto al viewport e rimane sempre nella
-
-stessa posizione anche se la pagina viene fatta scorrere
+Un elemento __fixed__ è posizionato rispetto al viewport e rimane sempre nella stessa posizione anche se la pagina viene fatta scorrere
 
 Le proprietà __top, bottom, left__ e __right__ servono a posizionare l'elemento
 
-Un elemento fisso non lascia lo spazio vuoto nella pagina in cui sarebbe stato
-
-normalmente posizionato
+Un elemento fisso non lascia lo spazio vuoto nella pagina in cui sarebbe stato normalmente posizionato
 
 ---
 
@@ -1024,53 +1012,33 @@ normalmente posizionato
 
 Un elemento __absolute__ è posizionato rispetto all'antenato posizionato più vicino
 
-Se un elemento posizionato __absolute__ non ha antenati posizionati, utilizza il
+Se un elemento posizionato __absolute__ non ha antenati posizionati, utilizza il corpo del documento e si sposta insieme allo scorrimento della pagina
 
-corpo del documento e si sposta insieme allo scorrimento della pagina
-
-Gli elementi posizionati assoluti vengono rimossi dal flusso normale e possono
-
-sovrapporsi ad altri elementi
+Gli elementi posizionati assoluti vengono rimossi dal flusso normale e possono sovrapporsi ad altri elementi
 
 ---
 
 # CSS position sticky (appiccicoso)
 
-Un elemento __sticky__ è posizionato in base alla posizione di scorrimento
+Un elemento __sticky__ è posizionato in base alla posizione di scorrimento dell'utente
 
-dell'utente
+Un elemento __sticky__ si alterna tra __relative__ e __fixed__, a seconda della posizione di scorrimento
 
-Un elemento __sticky__ si alterna tra __relative__ e __fixed__, a seconda della posizione di
-
-scorrimento
-
-Viene posizionato in modo __relative__ fino a quando una determinata posizione di
-
-offset non viene raggiunta nella finestra, quindi si attacca in posizione come
-
-__fixed__
+Viene posizionato in modo __relative__ fino a quando una determinata posizione di offset non viene raggiunta nella finestra, quindi si attacca in posizione come __fixed__
 
 ---
 
 # CSS z-index
 
-Gli elementi all’interno di una pagina possono sovrapporsi a causa del loro
+Gli elementi all’interno di una pagina possono sovrapporsi a causa del loro posizionamento.
 
-posizionamento.
-
-Per poter definire la priorità di ogni elemento, è possibile assegnare la proprietà
-
-__z-index__ seguita da un numero, più è basso il numero, più l’elemento verrà
-
-messo di sfondo. Più è alto più sarà messo in primo piano.
+Per poter definire la priorità di ogni elemento, è possibile assegnare la proprietà __z-index__ seguita da un numero, più è basso il numero, più l’elemento verrà messo di sfondo. Più è alto più sarà messo in primo piano.
 
 ---
 
 # CSS overflow
 
-La proprietà __overflow__ controlla cosa succede al contenuto che è troppo grande
-
-per adattarsi a un'area.
+La proprietà __overflow__ controlla cosa succede al contenuto che è troppo grande per adattarsi a un'area.
 
 I valori che può assumere sono:
 
@@ -1102,9 +1070,7 @@ __inherit__ – L'elemento eredita il valore float del suo genitore
 
 # CSS clear
 
-La proprietà __clear__ obbliga il prossimo elemento a posizionarsi sotto all’elemento
-
-corrente
+La proprietà __clear__ obbliga il prossimo elemento a posizionarsi sotto all’elemento corrente
 
 __none –__ rappresenta il default e non sposta l’elemento sotto agli elementi __float__
 
@@ -1122,15 +1088,11 @@ __inherit__ – L'elemento eredita il valore __clear__ del suo genitore
 
 Esistono varie tecniche per poter allineare un elemento.
 
-Per quanto riguarda l’allineamento orizzontale è possibile usare la proprietà
-
-__margin__ col valore ad __auto__
+Per quanto riguarda l’allineamento orizzontale è possibile usare la proprietà __margin__ col valore ad __auto__
 
 Per i testi è possibile utilizzare la proprietà __text-align__ col valore __center__
 
-Per le immagini occorre indicare le proprietà __display__ a __block__ e __margin-left__ e
-
-__margin-right__ ad __auto__
+Per le immagini occorre indicare le proprietà __display__ a __block__ e __margin-left__ e __margin-right__ ad __auto__
 
 Il __padding__ può invece essere usato per una centratura verticale
 
@@ -1138,45 +1100,24 @@ Il __padding__ può invece essere usato per una centratura verticale
 
 # CSS !important
 
-Tramite la regola __!important__ è possibile sovrascrivere qualsiasi regola
+Tramite la regola __!important__ è possibile sovrascrivere qualsiasi regola precedente, dando priorità alla corrente.
 
-precedente, dando priorità alla corrente.
-
-Questo è utile se vogliamo dare una importanza ad una certa regola rispetto ad
-
-altre
+Questo è utile se vogliamo dare una importanza ad una certa regola rispetto ad altre
 
 ---
 
 # CSS screen resolution
 
-Con l’evoluzione degli apparati che si collegano ad internet è difficile definire un
+Con l’evoluzione degli apparati che si collegano ad internet è difficile definire un vero e proprio standard di risoluzione video
 
-vero e proprio standard di risoluzione video
+Per questo motivo ogni sviluppatore di librerie CSS ha adottato nel corso del tempo degli standard che col tempo si sono evoluti
 
-Per questo motivo ogni sviluppatore di librerie CSS ha adottato nel corso del
+Il comportamento minimo che si è sempre cercato di seguire è però stato quello di indirizzare correttamente almeno 4 tipi di visualizzazioni
 
-tempo degli standard che col tempo si sono evoluti
-
-Il comportamento minimo che si è sempre cercato di seguire è però stato quello
-
-di indirizzare correttamente almeno 4 tipi di visualizzazioni
-
-l
-
-l
-
-l
-
-l
-
-Schermi piccoli: cellulari
-
-Schermi medi: tablet o cellulari a display orizzontale
-
-Schermi grandi: PC
-
-Schermi molto grandi: schermi full HD
+- Schermi piccoli: cellulari
+- Schermi medi: tablet o cellulari a display orizzontale
+- Schermi grandi: PC
+- Schermi molto grandi: schermi full HD
 
 ---
 
@@ -1185,19 +1126,25 @@ Schermi molto grandi: schermi full HD
 Un buon compromesso può essere l’uso delle seguenti media query
 
 // Schermi medio-piccoli (almeno 576px)
-
 @media (min-width: 576px) { ... }
 
 // Schermi medi (almeno 768px)
-
 @media (min-width: 768px) { ... }
 
 // Schermi grandi (almeno 992px)
-
 @media (min-width: 992px) { ... }
 
 // Schermi molto grandi (almeno 1200px)
-
 @media (min-width: 1200px) { ... }
 
 <https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/introduzione/>
+
+---
+
+Fonti
+
+<https://www.w3schools.com> : argomenti ed idee per esempi
+<https://it.wikipedia.org> : definizioni e argomenti
+<https://www.w3.org/Style/CSS/specs.en.html> : specifiche CSS3
+
+Ogni immagine inserita riporta la fonte
