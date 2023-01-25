@@ -7,13 +7,27 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 marp: true
 footer: https://github.com/matteobaccan/CorsoCSS
 ---
+
+# Corso CSS3
+
+Impariamo a usare CSS3 conoscendone le basi
+
+![bg right](img/matteo-baccan.jpg)
+
 <!-- _paginate: false -->
 <!-- _footer: "" -->
-![bg](img/Chapter_html0.png)
 
 ---
 
-# CSS
+## Scopo del corso
+
+Queste slide nascono dalla mia curiosità verso CSS3 e dall'esperienza che ho accumulato nel corso degli anni.
+
+La struttura base del corso ripercorre i passi seguiti da w3schools, li arricchisce con nuovi esempi ed una serie di slide in italiano.
+
+---
+
+## CSS
 
 __Cascading Style Sheets__ : in italiano fogli di stile a cascata
 
@@ -25,7 +39,7 @@ La sua interpretazione necessita di un browser
 
 ---
 
-# CSS – strumenti
+## CSS – strumenti
 
 Lo strumento che useremo durante il corso è
 
@@ -39,7 +53,7 @@ Iscrivetevi e seguite il profilo creato apposta per il corso
 
 ---
 
-# CSS – strumenti
+## CSS – editor
 
 Editor
 
@@ -56,7 +70,7 @@ Le slide e i sorgenti del corso, liberamente ispirati a <https://www.w3schools.c
 
 ---
 
-# CSS – esempio
+## CSS – esempio
 
     body {
         background-color: red;
@@ -74,7 +88,7 @@ Le slide e i sorgenti del corso, liberamente ispirati a <https://www.w3schools.c
 
 ---
 
-# Cos'è il CSS?
+## Cos'è il CSS?
 
 CSS è acronimo di __Cascading Style Sheets__, sono fogli che vengono utilizzati per formattare le pagine web.
 
@@ -84,7 +98,7 @@ Da notare che __cascading__ identifica il fatto che uno stile applicato a un ele
 
 ---
 
-# CSS inserimento in pagina
+## CSS inserimento in pagina
 
 I CSS possono essere aggiunti ai documenti HTML in 3 modi:
 
@@ -94,7 +108,7 @@ I CSS possono essere aggiunti ai documenti HTML in 3 modi:
 
 ---
 
-# CSS Inline
+## CSS Inline
 
 \<h1 __style="color:blue;"__>Una intestazione blue</h1>
 
@@ -102,7 +116,7 @@ I CSS possono essere aggiunti ai documenti HTML in 3 modi:
 
 ---
 
-# CSS Interno
+## CSS Interno
 
 \<head>
 __\<style>__
@@ -114,7 +128,7 @@ __\</style>__
 
 ---
 
-# CSS Esterno
+## CSS Esterno
 
 \<!DOCTYPE html>
 \<html>
@@ -129,7 +143,7 @@ __\<link rel="stylesheet" href="styles.css">__
 
 ---
 
-# CSS styles.css
+## CSS styles.css
 
     body {
         background-color: powderblue;
@@ -145,7 +159,7 @@ __\<link rel="stylesheet" href="styles.css">__
 
 ---
 
-# CSS sintassi
+## CSS sintassi
 
 La sintassi di base dei CSS è data dalla dichiarazione di un __selector__, seguito da una lista di __proprietà__ e del loro relativo __valore__
 
@@ -161,7 +175,7 @@ In questo caso il selettore è __body__ e la proprietà impostata è __backgroun
 
 ---
 
-# CSS selector
+## CSS selector
 
 I __selector__ permettono di identificare in modo preciso gli elementi HTML che vogliamo personalizzare.
 
@@ -175,7 +189,7 @@ __selector di attributo :__ selezionano gli elementi in base a un attributo o al
 
 ---
 
-# CSS selector semplici
+## CSS selector semplici
 
 I __selector__ semplici selezionano gli elementi in base a nome, id, classe
 
@@ -197,7 +211,7 @@ I __selector__ semplici selezionano gli elementi in base a nome, id, classe
 
 ---
 
-# CSS selector universale
+## CSS selector universale
 
 Per convenzione esiste il selector __\*__ che indica che le proprietà indicate devono essere applicate a qualsiasi __tag__
 
@@ -209,7 +223,7 @@ In questo modo, qualsiasi elemento contenuto in pagina, avrà una colorazione di
 
 ---
 
-# CSS selector raggruppamenti
+## CSS selector raggruppamenti
 
 Per ridurre la prolissità dei CSS è stata introdotta la sintassi per raggruppamento che permette di mettere, in un’unica dichiarazione, più direttive CSS. Ad esempio:
 
@@ -228,9 +242,9 @@ Equivale a scrivere
 
 ---
 
-# CSS selector combinator
+## CSS selector combinator
 
-I __selector combinatori :__ selezionano gli elementi in base alla loro relazione.
+I __selector combinator__ selezionano gli elementi in base alla loro relazione.
 
 Per determinare la relazione viene usato un __combinator__. I combinator possono essere di 4 tipi
 
@@ -241,7 +255,7 @@ Per determinare la relazione viene usato un __combinator__. I combinator possono
 
 ---
 
-# CSS selector combinator
+## CSS selector combinator - tipologie
 
 __discendente (spazio)__
 
@@ -261,7 +275,7 @@ __fratelli generali (~)__
 
 ---
 
-# CSS selector pseudo classe
+## CSS selector pseudo classe
 
 Una pseudo classe identifica uno stato speciale di un tag.
 
@@ -273,7 +287,7 @@ __proprietà__: __valore__;
 
 ---
 
-# CSS selector pseudo classe: esempi
+## CSS selector pseudo classe: esempi
 
 Esistono una trentina di pseudoclassi.
 
@@ -289,7 +303,7 @@ Sul sito dei developer Mozilla è possibile averne un elenco completo
 
 ---
 
-# CSS selector pseudo elemento
+## CSS selector pseudo elemento
 
 Un pseudo elemento viene utilizzato per applicare uno stile a una parte specifica di un elemento.
 
@@ -301,7 +315,7 @@ __proprietà__: __valore__;
 
 ---
 
-# CSS selector pseudo elemento
+## CSS selector pseudo elemento
 
 Un pseudo elemento viene utilizzato per applicare uno stile a una parte specifica di un elemento.
 
@@ -311,7 +325,7 @@ __::first-child__ è il primo elemento di una lista
 
 ---
 
-# CSS attribute selector
+## CSS attribute selector
 
 Tramite i selector di attributi è possibile applicare uno stile agli elementi HTML che hanno attributi o valori di attributo specifici.
 
@@ -325,7 +339,7 @@ __proprietà__: __valore__;
 
 ---
 
-# CSS attribute selector
+## CSS attribute selector
 
 Seleziono solo il tag __p__ che ha un attributo chiamato __test1__
 
@@ -341,7 +355,7 @@ __}__
 
 ---
 
-# CSS attribute selector
+## CSS attribute selector
 
 Seleziono un attributo che contiene la parola valore
 
@@ -357,7 +371,7 @@ __selector[attributo|=valore]__ {
 
 ---
 
-# CSS attribute selector
+## CSS attribute selector
 
 Seleziono un attributo che inizia valore
 
@@ -373,7 +387,7 @@ __selector[attributo$=valore]__ {
 
 ---
 
-# CSS attribute selector
+## CSS attribute selector
 
 Seleziono un attributo che contiene la sottostringa valore
 
@@ -383,7 +397,7 @@ __selector[attributo\*=valore]__ {
 
 ---
 
-# CSS commenti
+## CSS commenti
 
 All’interno di un CSS è possibile inserire dei commenti
 
@@ -395,7 +409,7 @@ selector {
 
 ---
 
-# CSS colori
+## CSS colori
 
 All’interno di un CSS è possibile referenziare dei colori
 
@@ -405,7 +419,7 @@ sintassi RGB, HEX, HSL, RGBA e HSLA
 
 ---
 
-# CSS come usare i colori
+## CSS come usare i colori
 
 Background
 
@@ -421,7 +435,7 @@ Border
 
 ---
 
-# CSS background
+## CSS background
 
 I background possono avere varie proprietà di personalizzazione.
 
@@ -435,13 +449,13 @@ Opacità/trasparenza. Può assumere un valore compreso tra 0,0 e 1,0. Più basso
 
 ---
 
-# CSS background
+## CSS background
 
 background-image
 
 \<div style="__background-image: url(gattino.gif);__">Lorem ipsum</div>
 
-background-pepeat
+background-repeat
 
 \<div style="__background-image: url(gattino.gif); background-repeat: repeat-__
 
@@ -455,7 +469,7 @@ __repeat; background-position: right top;__">Lorem ipsum</div>
 
 ---
 
-# CSS background
+## CSS background
 
 background-attachment
 
@@ -469,7 +483,7 @@ __scroll;__">Lorem ipsum</div>
 
 ---
 
-# CSS border
+## CSS border
 
 Le proprietà __border__ consente di specificare lo stile, la larghezza e il colore del bordo di un elemento.
 
@@ -477,7 +491,7 @@ __border__ può essere usata in modo compatto o specificandone le singole caratt
 
 ---
 
-# CSS border-style
+## CSS border-style
 
 __border-style__ indica lo stile del bordo
 __dotted__ - bordo punteggiato
@@ -493,7 +507,7 @@ __hidden__ - bordo nascosto
 
 ---
 
-# CSS border-style
+## CSS border-style
 
 Da notare che la proprietà può essere indicata anche 2, 3 o 4 volte con valori diversi.
 Se indicata 2 volte: vengono indicati i bordi superiore/inferiore e destro/sinistro.
@@ -501,7 +515,7 @@ Se 3: bordo superiore, bordo destro/sinistro e inferiore. Se 4: bordo superiore,
 
 ---
 
-# Border
+## Border
 
 __\<p style="border-style: dotted;">dotted\</p>__
 __\<p style="border-style: dashed;">dashed\</p>__
@@ -515,7 +529,7 @@ __\<p style="border-style: none;">none\</p>__
 
 ---
 
-# Border
+## Border
 
 __\<p style="border-style: hidden;">hidden\</p>__
 __\<p style="border-style: dotted solid;">mix1\</p>__
@@ -524,7 +538,7 @@ __\<p style="border-style: dotted dashed solid double;">mix3\</p>__
 
 ---
 
-# CSS border-width
+## CSS border-width
 
 La proprietà __border-width__ indica la grandezza dei 4 bordi.
 
@@ -539,7 +553,7 @@ dei valori predefiniti: thin, medium o thick.
 
 ---
 
-# CSS border-color
+## CSS border-color
 
 La proprietà __border-color__ indica il colore dei 4 bordi.
 
@@ -551,7 +565,7 @@ Il colore un valore espresso tramite nome, in esadecimale, RGB o HSL
 
 ---
 
-# CSS border lati
+## CSS border lati
 
 Le proprietà precedenti identificano in modo generale tutti i lati di un bordo. È però possibile indicare, singolarmente, i singoli bordi con la sintassi
 
@@ -567,7 +581,7 @@ border-__bottom__-style: dotted;
 
 ---
 
-# CSS border
+## CSS border
 
 Le proprietà precedenti possono essere compresse nell’unica proprietà __border.__
 
@@ -583,7 +597,7 @@ all’interno della stessa proprietà:
 
 ---
 
-# CSS border-radius
+## CSS border-radius
 
 Le proprietà __border-radius__ permette di indicare che il bordo deve aver gli angoli arrotondati. All’interno di questa proprietà va indicato il valore di arrotondamento
 
@@ -593,7 +607,7 @@ Questo valore può essere espresso in pixel o in percentuale
 
 ---
 
-# CSS margin
+## CSS margin
 
 Le proprietà __margin__ permette di indicare uno spazio attorno ai bordi.
 
@@ -605,7 +619,7 @@ Anche in questo caso è possibile indicare i singoli bordi sui quali applicare i
 
 ---
 
-# CSS margin
+## CSS margin
 
 ![width:300px](img/margin-left-25px-everyone-should-know-css-45632524.png)
 
@@ -613,7 +627,7 @@ Anche in questo caso è possibile indicare i singoli bordi sui quali applicare i
 
 ---
 
-# CSS padding
+## CSS padding
 
 Le proprietà __padding__ permette di indicare uno spazio interno ai bordi.
 
@@ -625,7 +639,7 @@ Anche in questo caso è possibile indicare i singoli bordi sui quali applicare i
 
 ---
 
-# CSS height width
+## CSS height width
 
 Le proprietà __height__ e __width__ permettono di indicare l’altezza e la larghezza di un elemento.
 
@@ -643,7 +657,7 @@ __min-height:__ altezza minima
 
 ---
 
-# CSS height width
+## CSS height width
 
 ![width:300px](img/tumblr_5c1b8951fc2aea4ea5f2f1d7490ccc8a_0296c7a6_1280.jpg)
 
@@ -651,7 +665,7 @@ __min-height:__ altezza minima
 
 ---
 
-# CSS box model
+## CSS box model
 
 Il termine "box model" viene utilizzato per indicare il design e layout.
 
@@ -667,7 +681,7 @@ __margin__, __border__, __padding__ e contenuto.
 
 ---
 
-# CSS outline
+## CSS outline
 
 Esternamente al __border__, senza interferire con il dimensionamento del __margin__, è possibile lavorare con le proprietà do __outline__.
 
@@ -683,7 +697,7 @@ __outline__: la proprietà compressa
 
 ---
 
-# CSS text
+## CSS text
 
 Tramite CSS è possibile formattare e dare uno stile ai testi.
 
@@ -697,7 +711,7 @@ __direction__: la direzione del testo
 
 ---
 
-# CSS text decoration
+## CSS text decoration
 
 È possibile dare delle caratteristiche al testo.
 
@@ -713,7 +727,7 @@ __text-decoration__: proprietà unica
 
 ---
 
-# CSS text transformation
+## CSS text transformation
 
 Tramite __text-transform__ è possibile mettere in maiuscolo, minuscolo l’intero testo o la prima lettera del testo:
 
@@ -725,7 +739,7 @@ __text-transform__: capitalize;
 
 ---
 
-# CSS text spacing
+## CSS text spacing
 
 La spaziatura dei testi, la loro altezza, lo spazio fra parole e caratteri sono tutte caratteristiche che possono essere variate tramite le proprietà:
 
@@ -741,7 +755,7 @@ __white-space__
 
 ---
 
-# CSS text shadow
+## CSS text shadow
 
 Con la proprietà __text-shadow__ è possibile impostare delle ombre ai testi:
 
@@ -749,7 +763,7 @@ __text-shadow:__ \<orizzontale> \<verticale> \<sfocatura> \<colore>
 
 ---
 
-# CSS font
+## CSS font
 
 Utilizzare il corretto font in base al sito che si vuole costruire ha una enorme importanza.
 
@@ -761,7 +775,7 @@ __font-family:__ tipologia di famiglia
 
 ---
 
-# CSS font
+## CSS font
 
 Le famiglie generiche utilizzabili in CSS sono
 
@@ -777,13 +791,13 @@ __fantasy__: sono caratteri decorativi/giocosi.
 
 ---
 
-# CSS font - esempi
+## CSS font - esempi
 
 ![width:900px](img/font.png)
 
 ---
 
-# CSS font web safe
+## CSS font web safe
 
 Vista la varietà di sistemi operativi e browser, esiste una convenzione per l’utilizzo di font universalmente utilizzabili all’interno di un browser.
 
@@ -796,7 +810,7 @@ Brush Script MT (cursive)
 
 ---
 
-# CSS font fallback
+## CSS font fallback
 
 Per garantire una corretta visualizzazione delle pagine, è buona norma utilizzare la sequenza dichiarativa di font in questo modo
 
@@ -804,7 +818,7 @@ __font-family__: \<font>, \<websafe>, \<famiglia>
 
 ---
 
-# CSS font style size
+## CSS font style size
 
 Nei font è possibile variare anche style e size
 
@@ -816,7 +830,7 @@ __font-size__: 40px;
 
 ---
 
-# CSS font google
+## CSS font google
 
 Google mette a disposizione una serie di font direttamente utilizzabili
 
@@ -826,7 +840,7 @@ __\<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">_
 
 ---
 
-# CSS icone google
+## CSS icone google
 
 Oltre ai font Google mette a disposizione una serie icone liberamente importabili
 
@@ -846,7 +860,7 @@ nei nostri progetti
 
 ---
 
-# CSS icone awesome
+## CSS icone awesome
 
 L’utilizzo di icone permette di rendere più intuitive le pagine.
 
@@ -860,11 +874,11 @@ Fonte: <https://fontawesome.com/icons/>
 
 ---
 
-# CSS link
+## CSS link
 
-Il tag __a__ può essere personalizzato in base allo stato del link, utilizzando le proprietà che vengono usati per i testi.
+Il tag __a__ può essere personalizzato in base allo stato del link, utilizzando le proprietà che vengono usate per i testi.
 
-Gli stati condizionabili dei link sono
+Gli stati dei link sono
 
 __a:link – link non visitato__
 
@@ -876,7 +890,7 @@ __a:active – un link quando viene cliccato__
 
 ---
 
-# CSS liste
+## CSS liste
 
 Le liste html possono essere __ordered__ (ol) e __unordered__ (ul).
 
@@ -896,7 +910,7 @@ __list-style-image:__ referenzia una immagine da unire alla voce
 
 ---
 
-# CSS liste
+## CSS liste
 
 __list-style-position__: definisce la posizione del marker di lista, se deve essere
 
@@ -908,7 +922,7 @@ __list-style-position__: outside;
 
 ---
 
-# CSS table
+## CSS table
 
 Le tabelle hanno un gran numero di personalizzazioni basate sulla loro struttura e caratteristiche delle celle e delle colonne. Le principali personalizzazioni sono fattibili su
 
@@ -924,7 +938,7 @@ __tr:nth-child(even) {background-color: grey;}__ /\* Alternare la righe \*/
 
 ---
 
-# CSS display
+## CSS display
 
 La proprietà __display__ è la più importante per il controllo del layout
 
@@ -936,7 +950,7 @@ __display__ a __none__ permette di nascondere degli elementi a video
 
 ---
 
-# CSS display
+## CSS display
 
 Esempi di __display__ block sono
 
@@ -948,7 +962,7 @@ span, a, img
 
 ---
 
-# CSS max-width
+## CSS max-width
 
 __width__ e __max-width__ ci permettono di definire la dimensione di un elemento
 
@@ -962,7 +976,7 @@ dell’elemento all’interno della larghezza di pagina
 
 ---
 
-# CSS position
+## CSS position
 
 La proprietà __position__ indica il tipo di posizionamento utilizzato per un elemento
 
@@ -976,7 +990,7 @@ Ogni posizionamento ha delle proprie caratteristiche
 
 ---
 
-# CSS position static
+## CSS position static
 
 L’impostazione __static__ è il valore predefinito degli elementi HTML
 
@@ -986,7 +1000,7 @@ Un elemento con posizione __static__ non è posizionato secondo il normale fluss
 
 ---
 
-# CSS position relative
+## CSS position relative
 
 Un elemento __relative__ è posizionato rispetto alla sua posizione normale
 
@@ -996,7 +1010,7 @@ Gli altri contenuti non verranno adattati per adattarsi a eventuali spazi vuoti 
 
 ---
 
-# CSS position fixed
+## CSS position fixed
 
 Un elemento __fixed__ è posizionato rispetto al viewport e rimane sempre nella stessa posizione anche se la pagina viene fatta scorrere
 
@@ -1006,7 +1020,7 @@ Un elemento fisso non lascia lo spazio vuoto nella pagina in cui sarebbe stato n
 
 ---
 
-# CSS position absolute
+## CSS position absolute
 
 Un elemento __absolute__ è posizionato rispetto all'antenato posizionato più vicino
 
@@ -1016,7 +1030,7 @@ Gli elementi posizionati assoluti vengono rimossi dal flusso normale e possono s
 
 ---
 
-# CSS position sticky (appiccicoso)
+## CSS position sticky (appiccicoso)
 
 Un elemento __sticky__ è posizionato in base alla posizione di scorrimento dell'utente
 
@@ -1026,7 +1040,7 @@ Viene posizionato in modo __relative__ fino a quando una determinata posizione d
 
 ---
 
-# CSS z-index
+## CSS z-index
 
 Gli elementi all’interno di una pagina possono sovrapporsi a causa del loro posizionamento.
 
@@ -1034,7 +1048,7 @@ Per poter definire la priorità di ogni elemento, è possibile assegnare la prop
 
 ---
 
-# CSS overflow
+## CSS overflow
 
 La proprietà __overflow__ controlla cosa succede al contenuto che è troppo grande per adattarsi a un'area.
 
@@ -1050,7 +1064,7 @@ __auto__ – Come scroll, ma le barre sono aggiunte solo se necessarie
 
 ---
 
-# CSS float
+## CSS float
 
 La proprietà __float__ definisce come un elemento deve fluttuare.
 
@@ -1066,7 +1080,7 @@ __inherit__ – L'elemento eredita il valore float del suo genitore
 
 ---
 
-# CSS clear
+## CSS clear
 
 La proprietà __clear__ obbliga il prossimo elemento a posizionarsi sotto all’elemento corrente
 
@@ -1082,7 +1096,7 @@ __inherit__ – L'elemento eredita il valore __clear__ del suo genitore
 
 ---
 
-# CSS allineamenti
+## CSS allineamenti
 
 Esistono varie tecniche per poter allineare un elemento.
 
@@ -1096,7 +1110,7 @@ Il __padding__ può invece essere usato per una centratura verticale
 
 ---
 
-# CSS !important
+## CSS !important
 
 Tramite la regola __!important__ è possibile sovrascrivere qualsiasi regola precedente, dando priorità alla corrente.
 
@@ -1104,7 +1118,7 @@ Questo è utile se vogliamo dare una importanza ad una certa regola rispetto ad 
 
 ---
 
-# CSS screen resolution
+## CSS screen resolution
 
 Con l’evoluzione degli apparati che si collegano ad internet è difficile definire un vero e proprio standard di risoluzione video
 
@@ -1119,7 +1133,7 @@ Il comportamento minimo che si è sempre cercato di seguire è però stato quell
 
 ---
 
-# CSS screen resolution
+## CSS screen resolution
 
 Un buon compromesso può essere l’uso delle seguenti media query
 
@@ -1146,3 +1160,9 @@ Fonti
 <https://www.w3.org/Style/CSS/specs.en.html> : specifiche CSS3
 
 Ogni immagine inserita riporta la fonte
+
+---
+
+## Disclaimer
+
+L'autore ha generato questo testo in parte con GPT-3, il modello di generazione del linguaggio su larga scala di OpenAI. Dopo aver generato la bozza della lingua, l'autore ha rivisto, modificato e rivisto la lingua a proprio piacimento e si assume la responsabilità  ultima del contenuto di questa pubblicazione.
