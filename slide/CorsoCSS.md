@@ -16,6 +16,12 @@ Impariamo a usare CSS3 conoscendone le basi
 
 <!-- _paginate: false -->
 <!-- _footer: "" -->
+<!-- style: "
+img[alt~='center'] {
+  display: block;
+  margin: 0 auto;
+}
+" -->
 
 ---
 
@@ -72,19 +78,21 @@ Le slide e i sorgenti del corso, liberamente ispirati a <https://www.w3schools.c
 
 ## CSS – esempio
 
-    body {
-        background-color: red;
-    }
+```css
+body {
+    background-color: red;
+}
 
-    h1 {
-        color: black;
-        text-align: center;
-    }
+h1 {
+    color: black;
+    text-align: center;
+}
 
-    p {
-        font-family: courier;
-        font-size: 24px;
-    }
+p {
+    font-family: courier;
+    font-size: 24px;
+}
+```
 
 ---
 
@@ -110,52 +118,66 @@ I CSS possono essere aggiunti ai documenti HTML in 3 modi:
 
 ## CSS Inline
 
-\<h1 __style="color:blue;"__>Una intestazione blue</h1>
+```html
+<h1 style="color:blue;">Una intestazione blue</h1>
 
-\<p __style="color:red;"__>Un paragrafo rosso</p>
+<p style="color:red;">Un paragrafo rosso</p>
+```
 
 ---
 
 ## CSS Interno
 
-\<head>
-__\<style>__
-__body {background-color: powderblue;}__
-__h1 {color: blue;}__
-__p {color: red;}__
-__\</style>__
-\</head>
+```html
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+        h1 {
+            color: blue;
+        }
+        p {
+            color: red;
+        }
+    </style>
+</head>
+```
 
 ---
 
 ## CSS Esterno
 
-\<!DOCTYPE html>
-\<html>
-\<head>
-__\<link rel="stylesheet" href="styles.css">__
-\</head>
-\<body>
-\<h1>Intestazione</h1>
-\<p>Paragrafo</p>
-\</body>
-\</html>
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Intestazione</h1>
+        <p>Paragrafo</p>
+    </body>
+</html>
+```
 
 ---
 
 ## CSS styles.css
 
-    body {
-        background-color: powderblue;
-    }
+```css
+body {
+    background-color: powderblue;
+}
 
-    h1 {
-        color: blue;
-    }
+h1 {
+    color: blue;
+}
 
-    p {
-        color: red;
-    }
+p {
+    color: red;
+}
+```
 
 ---
 
@@ -163,15 +185,19 @@ __\<link rel="stylesheet" href="styles.css">__
 
 La sintassi di base dei CSS è data dalla dichiarazione di un __selector__, seguito da una lista di __proprietà__ e del loro relativo __valore__
 
-    selector {
-        proprietà: valore;
-    }
+```css
+selector {
+    proprietà: valore;
+}
+```
 
 In questo caso il selettore è __body__ e la proprietà impostata è __background-color__ seguita dal suo valore __red__
 
-    body {
+```css
+body {
         background-color: red;
-    }
+}
+```
 
 ---
 
@@ -193,21 +219,23 @@ __selector di attributo :__ selezionano gli elementi in base a un attributo o al
 
 I __selector__ semplici selezionano gli elementi in base a nome, id, classe
 
-    tag {
-        color: green;
-    }
+```css
+tag {
+    color: green;
+}
 
-    #idtag {
-        color: red;
-    }
+#idtag {
+    color: red;
+}
 
-    .classenome {
-        color: magenta;
-    }
+.classenome {
+    color: magenta;
+}
 
-    tag.classenome {
-        color: magenta;
-    }
+tag.classenome {
+    color: magenta;
+}
+```
 
 ---
 
@@ -215,9 +243,11 @@ I __selector__ semplici selezionano gli elementi in base a nome, id, classe
 
 Per convenzione esiste il selector __\*__ che indica che le proprietà indicate devono essere applicate a qualsiasi __tag__
 
-    * {
-        color: green;
-    }
+```css
+* {
+    color: green;
+}
+```
 
 In questo modo, qualsiasi elemento contenuto in pagina, avrà una colorazione di default impostata sul verde
 
@@ -227,18 +257,22 @@ In questo modo, qualsiasi elemento contenuto in pagina, avrà una colorazione di
 
 Per ridurre la prolissità dei CSS è stata introdotta la sintassi per raggruppamento che permette di mettere, in un’unica dichiarazione, più direttive CSS. Ad esempio:
 
-    h1 {
-        color: green;
-    }
-    h2 {
-        color: green;
-    }
+```css
+h1 {
+    color: green;
+}
+h2 {
+    color: green;
+}
+```
 
 Equivale a scrivere
 
-    h1, h2 {
-        color: green;
-    }
+```css
+h1, h2 {
+    color: green;
+}
+```
 
 ---
 
@@ -257,21 +291,33 @@ Per determinare la relazione viene usato un __combinator__. I combinator possono
 
 ## CSS selector combinator - tipologie
 
-__discendente (spazio)__
+### discendente (spazio)
 
-    div p { background-color: red; }
+```css
+div p { background-color: red; }
+```
 
-__figlio (>)__
+### figlio (>)
 
-    div > p { color: white; }
+```css
+div > p { color: white; }
+```
 
-__fratelli adiacenti (+)__
+---
 
-    h3 + span { color: white; }
+## CSS selector combinator - fratelli
 
-__fratelli generali (~)__
+### fratelli adiacenti (+)
 
-    h2 ~ h3 { border: 1px solid black; }
+```css
+h3 + span { color: white; }
+```
+
+### fratelli generali (~)
+
+```css
+h2 ~ h3 { border: 1px solid black; }
+```
 
 ---
 
@@ -281,9 +327,11 @@ Una pseudo classe identifica uno stato speciale di un tag.
 
 La sintassi di utilizzo è simile alla sintassi base, con l’aggiunta di : e il tipo di pseudoclasse
 
-__selector:pseudoclasse__ {
-__proprietà__: __valore__;
+```css
+selector:pseudoclasse {
+    proprietà: valore;
 }
+```
 
 ---
 
@@ -309,13 +357,15 @@ Un pseudo elemento viene utilizzato per applicare uno stile a una parte specific
 
 La sintassi di utilizzo è simile alle pseudo classi, con l’aggiunta di un doppio : e il tipo di pseudo elemento
 
-__selector::pseudoelemento__ {
-__proprietà__: __valore__;
+```css
+selector::pseudoelemento {
+    proprietà: valore;
 }
+```
 
 ---
 
-## CSS selector pseudo elemento
+## CSS selector pseudo elemento - esempi
 
 Un pseudo elemento viene utilizzato per applicare uno stile a una parte specifica di un elemento.
 
@@ -329,71 +379,87 @@ __::first-child__ è il primo elemento di una lista
 
 Tramite i selector di attributi è possibile applicare uno stile agli elementi HTML che hanno attributi o valori di attributo specifici.
 
-__selector[attributo]__ {
-__proprietà__: __valore__;
+```css
+selector[attributo] {
+    proprietà: valore;
 }
 
-__selector[attributo=valore]__ {
-__proprietà__: __valore__;
+selector[attributo=valore] {
+    proprietà: valore;
 }
+```
 
 ---
 
-## CSS attribute selector
+## CSS attribute selector - esempi
 
 Seleziono solo il tag __p__ che ha un attributo chiamato __test1__
 
-__p[test1] {__
-__color: red;__
-__}__
+```css
+p[test1] {  
+    color: red;
+}
+```
 
 Seleziono solo il tag __p__ che ha un attributo chiamato __test2__ col valore __pippo__
 
-__p[test2=pippo] {__
-__color: green;__
-__}__
+```css
+p[test2=pippo] {
+    color: green;
+}
+```
 
 ---
 
-## CSS attribute selector
+## CSS attribute selector - 1
 
 Seleziono un attributo che contiene la parola valore
 
-__selector[attributo~=valore]__ {
-    __proprietà__: __valore__;
+```css
+selector[attributo~=valore] {
+    proprietà: valore;
 }
+```
 
 Seleziono un attributo che inizia per valore (uguale o uguale seguito dal trattino)
 
-__selector[attributo|=valore]__ {
-    __proprietà__: __valore__;
+```css
+selector[attributo|=valore] {
+    proprietà: valore;
 }
+```
 
 ---
 
-## CSS attribute selector
+## CSS attribute selector - 2
 
 Seleziono un attributo che inizia valore
 
-__selector[attributo^=valore]__ {
-    __proprietà__: __valore__;
+```css
+selector[attributo^=valore] {
+    proprietà: valore;
 }
+```
 
 Seleziono un attributo che finisce per valore
 
-__selector[attributo$=valore]__ {
-    __proprietà__: __valore__;
+```css
+selector[attributo$=valore] {
+    proprietà: valore;
 }
+```
 
 ---
 
-## CSS attribute selector
+## CSS attribute selector - 3
 
 Seleziono un attributo che contiene la sottostringa valore
 
-__selector[attributo\*=valore]__ {
-    __proprietà__: __valore__;
+```css
+selector[attributo\*=valore] {
+    proprietà: valore;
 }
+```
 
 ---
 
@@ -403,9 +469,11 @@ All’interno di un CSS è possibile inserire dei commenti
 
 I commenti sono multiriga, iniziano con __/\*__ e terminano con __\*/__
 
+```css
 selector {
-    proprietà: valore; __/\* commento \*/__
+    proprietà: valore; /* commento */
 }
+```
 
 ---
 
@@ -423,49 +491,63 @@ sintassi RGB, HEX, HSL, RGBA e HSLA
 
 Background
 
-\<div style="__background-color:red;__">Lorem ipsum</div>
+```html
+<div style="background-color:red;">Lorem ipsum</div>
+```
 
 Foreground
 
-\<div style="__color:blue;__">Lorem ipsum</div>
+```html
+<div style="color:blue;">Lorem ipsum</div>
+```
 
 Border
 
-\<div style="__border:2px solid red;__">Lorem ipsum</div>
+```html
+<div style="border:2px solid red;">Lorem ipsum</div>
+```
 
 ---
 
-## CSS background
+## CSS background - 1
 
 I background possono avere varie proprietà di personalizzazione.
 
 Colore
 
-\<div style="__background-color:red;__">Lorem ipsum</div>
+```html
+<div style="background-color:red;">Lorem ipsum</div>
+```
 
 Opacità/trasparenza. Può assumere un valore compreso tra 0,0 e 1,0. Più basso è il valore, più è trasparente:
 
-\<div style="__background-color:red; opacity: 0.3;__">Lorem ipsum</div>
+```html
+<div style="background-color:red; opacity: 0.3;">Lorem ipsum</div>
+```
 
 ---
 
-## CSS background
+## CSS background - 2
 
 background-image
 
-\<div style="__background-image: url(gattino.gif);__">Lorem ipsum</div>
+```html
+<div style="background-image: url(gattino.gif);">Lorem ipsum</div>
+```
 
 background-repeat
 
-\<div style="__background-image: url(gattino.gif); background-repeat: repeat-__
-
-__x;__">Lorem ipsum</div>
+```html
+<div style="background-image: url(gattino.gif); 
+background-repeat: repeat-x;">Lorem ipsum</div>
+```
 
 background-position
 
-\<div style="__background-image: url(gattino.gif); background-repeat: no-__
-
-__repeat; background-position: right top;__">Lorem ipsum</div>
+```html
+<div style="background-image: url(gattino.gif); 
+background-repeat: no-repeat; background-position: right top;">Lorem ipsum</div>
+```
 
 ---
 
@@ -473,13 +555,13 @@ __repeat; background-position: right top;__">Lorem ipsum</div>
 
 background-attachment
 
-\<div style="__background-image: url(gattino.gif); background-attachment:__
+```html
+<div style="background-image: url(gattino.gif); 
+background-attachment:fixed;">Lorem ipsum</div>
 
-__fixed;__">Lorem ipsum</div>
-
-\<div style="__background-image: url(gattino.gif); background-attachment:__
-
-__scroll;__">Lorem ipsum</div>
+<div style="background-image: url(gattino.gif); 
+background-attachment:scroll;">Lorem ipsum</div>
+```
 
 ---
 
@@ -507,7 +589,7 @@ __hidden__ - bordo nascosto
 
 ---
 
-## CSS border-style
+## CSS border-style - note
 
 Da notare che la proprietà può essere indicata anche 2, 3 o 4 volte con valori diversi.
 Se indicata 2 volte: vengono indicati i bordi superiore/inferiore e destro/sinistro.
@@ -515,26 +597,30 @@ Se 3: bordo superiore, bordo destro/sinistro e inferiore. Se 4: bordo superiore,
 
 ---
 
-## Border
+## Border - 1
 
-__\<p style="border-style: dotted;">dotted\</p>__
-__\<p style="border-style: dashed;">dashed\</p>__
-__\<p style="border-style: solid;">solid\</p>__
-__\<p style="border-style: double;">double\</p>__
-__\<p style="border-style: groove;">groove\</p>__
-__\<p style="border-style: ridge;">ridge\</p>__
-__\<p style="border-style: inset;">inset\</p>__
-__\<p style="border-style: outset;">outset\</p>__
-__\<p style="border-style: none;">none\</p>__
+```html
+<p style="border-style: dotted;">dotted</p>
+<p style="border-style: dashed;">dashed</p>
+<p style="border-style: solid;">solid</p>
+<p style="border-style: double;">double</p>
+<p style="border-style: groove;">groove</p>
+<p style="border-style: ridge;">ridge</p>
+<p style="border-style: inset;">inset</p>
+<p style="border-style: outset;">outset</p>
+<p style="border-style: none;">none</p>
+```
 
 ---
 
-## Border
+## Border - 2
 
-__\<p style="border-style: hidden;">hidden\</p>__
-__\<p style="border-style: dotted solid;">mix1\</p>__
-__\<p style="border-style: dotted solid dashed;">mix2\</p>__
-__\<p style="border-style: dotted dashed solid double;">mix3\</p>__
+```html
+<p style="border-style: hidden;">hidden</p>
+<p style="border-style: dotted solid;">mix1</p>
+<p style="border-style: dotted solid dashed;">mix2</p>
+<p style="border-style: dotted dashed solid double;">mix3</p>
+```
 
 ---
 
@@ -546,10 +632,12 @@ La grandezza può assumere un valore numerico in px, pt, cm, em o usare uno
 
 dei valori predefiniti: thin, medium o thick.
 
-\<p style="border-style: solid; __border-width: 5px;__">solid - width: 5px\</p>
-\<p style="border-style: solid; __border-width: thin;__">solid - thin\</p>
-\<p style="border-style: solid; __border-width: medium;__">solid - medium\</p>
-\<p style="border-style: solid; __border-width: thick;__">solid - thick\</p>
+```html
+<p style="border-style: solid; border-width: 5px;">solid - width: 5px</p>
+<p style="border-style: solid; border-width: thin;">solid - thin</p>
+<p style="border-style: solid; border-width: medium;">solid - medium</p>
+<p style="border-style: solid; border-width: thick;">solid - thick</p>
+```
 
 ---
 
@@ -559,9 +647,11 @@ La proprietà __border-color__ indica il colore dei 4 bordi.
 
 Il colore un valore espresso tramite nome, in esadecimale, RGB o HSL
 
-\<p style="border-style: solid; __border-color: red;__">solid - red\</p>
+```html
+<p style="border-style: solid; border-color: red;">solid - red</p>
 
-\<p style="border-style: solid; __border-color: #aeaeae;__">solid - aeaeae\</p>
+<p style="border-style: solid; border-color: #aeaeae;">solid - #aeaeae</p>
+```
 
 ---
 
@@ -573,15 +663,17 @@ __border-\<lato>-<proprietà>__
 
 Dove i lati sono indicati come: __top, left, bottom__ e __right__
 
-border-__top__-color: red;
+```css
+border-top-color: red;
 
-border-__bottom__-width: 10px;
+border-bottom-width: 10px;
 
-border-__bottom__-style: dotted;
+border-bottom-style: dotted;
+```
 
 ---
 
-## CSS border
+## CSS border - proprietà unica
 
 Le proprietà precedenti possono essere compresse nell’unica proprietà __border.__
 
@@ -593,7 +685,9 @@ border-color
 
 all’interno della stessa proprietà:
 
-\<p style="__border: 3px solid red;__">Border\</p>
+```html
+<p style="border: 3px solid red;">Border</p>
+```
 
 ---
 
@@ -613,15 +707,16 @@ Le proprietà __margin__ permette di indicare uno spazio attorno ai bordi.
 
 Anche in questo caso è possibile indicare i singoli bordi sui quali applicare i margini
 
-\<p style="__margin: 16px 10px 0 10px;__">Margin1\</p>
-
-\<p style="__margin-top:16px; margin-left:10px; margin-right:10px;__">Margin2\</p>
+```html
+<p style="margin: 16px 10px 0 10px;">Margin1</p>
+<p style="margin-top:16px; margin-left:10px; margin-right:10px;">Margin2</p>
+```
 
 ---
 
-## CSS margin
+## CSS margin - esempio
 
-![width:300px](img/margin-left-25px-everyone-should-know-css-45632524.png)
+![center width:300px](img/margin-left-25px-everyone-should-know-css-45632524.png)
 
 <https://me.me/i/margin-left-25px-everyone-should-know-css-a2abdd33f2b5499ba28fa8afab9dfc2b>
 
@@ -633,9 +728,11 @@ Le proprietà __padding__ permette di indicare uno spazio interno ai bordi.
 
 Anche in questo caso è possibile indicare i singoli bordi sui quali applicare il padding
 
-\<p style="__padding: 0px 10px;__">Padding1\</p>
+```html
+<p style="padding: 0px 10px;">Padding1</p>
 
-\<p style="__padding-top:0px; padding-left:10px; padding-right:10px;__">Padding2\</p>
+<p style="padding-top:0px; padding-left:10px; padding-right:10px;">Padding2</p>
+```
 
 ---
 
@@ -657,9 +754,9 @@ __min-height:__ altezza minima
 
 ---
 
-## CSS height width
+## CSS height width - esempio
 
-![width:300px](img/tumblr_5c1b8951fc2aea4ea5f2f1d7490ccc8a_0296c7a6_1280.jpg)
+![center width:300px](img/tumblr_5c1b8951fc2aea4ea5f2f1d7490ccc8a_0296c7a6_1280.jpg)
 
 <https://programmerhumour.tumblr.com/post/643187358740725760/css-cat>
 
@@ -675,7 +772,7 @@ __margin__, __border__, __padding__ e contenuto.
 
 ---
 
-![width:800px](img/CSS-box-model.jpg)
+![center width:800px](img/CSS-box-model.jpg)
 
 <https://www.webcodzing.com/css-box-model/>
 
@@ -775,7 +872,7 @@ __font-family:__ tipologia di famiglia
 
 ---
 
-## CSS font
+## CSS font - famiglie
 
 Le famiglie generiche utilizzabili in CSS sono
 
@@ -793,7 +890,7 @@ __fantasy__: sono caratteri decorativi/giocosi.
 
 ## CSS font - esempi
 
-![width:900px](img/font.png)
+![center width:900px](img/font.png)
 
 ---
 
@@ -834,9 +931,11 @@ __font-size__: 40px;
 
 Google mette a disposizione una serie di font direttamente utilizzabili
 
-__\<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">__
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
-\<h1 style="font-family: __'Sofia'__, sans-serif;">Testo in font Sofia\</h1>
+<h1 style="font-family: 'Sofia', sans-serif;">Testo in font Sofia</h1>
+```
 
 ---
 
@@ -846,17 +945,20 @@ Oltre ai font Google mette a disposizione una serie icone liberamente importabil
 
 nei nostri progetti
 
-    <link rel="stylesheet"href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+```html
+<link rel="stylesheet"
+href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <style>
+<style>
     .material-symbols-outlined {
         font-variation-settings:'FILL'0,'wght'400,'GRAD'0,'opsz'48
     }
-    </style>
+</style>
 
-    <span class="material-symbols-outlined">
+<span class="material-symbols-outlined">
     headset_mic
-    </span>*
+</span>*
+```
 
 ---
 
@@ -866,9 +968,12 @@ L’utilizzo di icone permette di rendere più intuitive le pagine.
 
 Oltre a alle icone google ci sono molte alternative in rete, come quelle fornite da fontawesome <https://fontawesome.com/>
 
-\<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+```html
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-__\<i class="fa-regular fa-user"></i>__
+<i class="fa-regular fa-user"></i>
+```
 
 Fonte: <https://fontawesome.com/icons/>
 
@@ -1137,6 +1242,7 @@ Il comportamento minimo che si è sempre cercato di seguire è però stato quell
 
 Un buon compromesso può essere l’uso delle seguenti media query
 
+```css
 // Schermi medio-piccoli (almeno 576px)
 @media (min-width: 576px) { ... }
 
@@ -1148,6 +1254,7 @@ Un buon compromesso può essere l’uso delle seguenti media query
 
 // Schermi molto grandi (almeno 1200px)
 @media (min-width: 1200px) { ... }
+```
 
 <https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/introduzione/>
 
