@@ -456,7 +456,7 @@ selector[attributo$=valore] {
 Seleziono un attributo che contiene la sottostringa valore
 
 ```css
-selector[attributo\*=valore] {
+selector[attributo*=valore] {
     proprietà: valore;
 }
 ```
@@ -519,7 +519,7 @@ Colore
 <div style="background-color:red;">Lorem ipsum</div>
 ```
 
-Opacità/trasparenza. Può assumere un valore compreso tra 0,0 e 1,0. Più basso è il valore, più è trasparente:
+Opacità/trasparenza. Può assumere un valore compreso tra 0.0 e 1.0. Più basso è il valore, più è trasparente:
 
 ```html
 <div style="background-color:red; opacity: 0.3;">Lorem ipsum</div>
