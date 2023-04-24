@@ -659,7 +659,7 @@ Il colore un valore espresso tramite nome, in esadecimale, RGB o HSL
 
 Le proprietà precedenti identificano in modo generale tutti i lati di un bordo. È però possibile indicare, singolarmente, i singoli bordi con la sintassi
 
-__border-\<lato>-<proprietà>__
+__border-\<lato>-<proprietà>__ : bordo - lato e proprietà
 
 Dove i lati sono indicati come: __top, left, bottom__ e __right__
 
@@ -1220,6 +1220,23 @@ Il __padding__ può invece essere usato per una centratura verticale
 Tramite la regola __!important__ è possibile sovrascrivere qualsiasi regola precedente, dando priorità alla corrente.
 
 Questo è utile se vogliamo dare una importanza ad una certa regola rispetto ad altre
+
+---
+
+## Border images
+
+La proprietà __border-image__ consente di specificare un'immagine da utilizzare al posto del bordo attorno ad un elemento.
+
+L'immobile si compone di tre parti:
+
+- Il percorso dell'immagine da utilizzare
+- Dove tagliare l'immagine
+- Definire se le sezioni centrali devono essere allungate o ripetute
+
+```css
+border: 10px solid transparent;
+border-image: url(bordo.png) 30 round;
+```
 
 ---
 
