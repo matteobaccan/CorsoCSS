@@ -1510,7 +1510,7 @@ Il comportamento minimo che si è sempre cercato di seguire è però stato quell
 
 ---
 
-## CSS screen resolution
+## CSS screen resolution - esempio
 
 Un buon compromesso può essere l’uso delle seguenti media query
 
