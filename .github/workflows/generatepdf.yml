@@ -17,7 +17,8 @@ jobs:
     - name: generate pdf
       run: | 
         cd slide
-        docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="it_IT.UTF-8" -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli CorsoCSS.md --pdf --allow-local-files
+        rem docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="it_IT.UTF-8" -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli CorsoCSS.md --pdf --allow-local-files
+        npx @marp-team/marp-cli@latest CorsoCSS.md --pdf --allow-local-files
       
     - name: commit & push
       run: |
