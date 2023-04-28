@@ -1223,19 +1223,274 @@ Questo è utile se vogliamo dare una importanza ad una certa regola rispetto ad 
 
 ---
 
-## Border images
+## CSS Gradienti
 
-La proprietà __border-image__ consente di specificare un'immagine da utilizzare al posto del bordo attorno ad un elemento.
+La proprietà __background-image__ può assumere delle tonalità gradienti che consentono di visualizzare transizioni uniformi tra due o più colori specificati.
 
-L'immobile si compone di tre parti:
+I CSS definiscono tre tipi di gradienti:
 
-- Il percorso dell'immagine da utilizzare
-- Dove tagliare l'immagine
-- Definire se le sezioni centrali devono essere allungate o ripetute
+- Gradienti lineari (vanno da giù/su/sinistra/destra/diagonalmente)
+- Gradienti radiali (definiti dal loro centro)
+- Gradienti conici (ruotati attorno a un punto centrale)
 
 ```css
-border: 10px solid transparent;
-border-image: url(bordo.png) 30 round;
+background-image: linear-gradient(red, black);
+```
+
+---
+
+## CSS 2D transform
+
+Le transform CSS ti consentono di spostare, ruotare, ridimensionare e inclinare gli elementi.
+
+Tutte queste trasformazioni avvengono tramite la proprietà
+
+```css
+transform
+```
+
+---
+
+## CSS 2D transform - esempi
+
+Il metodo translate() muove un elemento dalla sua posizione rispetto all'asse X e Y
+
+```css
+transform: translate(80px, 10px);
+```
+
+Il metodo rotate() ruota un elemento in senso orario o antiorario in base a un grado
+
+```css
+transform: rotate(10deg);
+transform: rotate(-10deg);
+```
+
+Il metodo scale() aumenta o diminuisce la dimensione di un elemento per larghezza e altezza, mentre i metodi scaleX() e scaleY() lavorano su una sola dimensione
+
+```css
+transform: scale(3, 2);
+transform: scale(0.8, 0.2);
+transform: scaleX(3);
+transform: scaleY(4);
+```
+
+---
+
+## CSS 2D transform - esempi2
+
+Il metodo skew() inclina un elemento lungo gli assi X e Y, mentre i metodi skewX() e skewY() lavorano su un singolo asse
+
+```css
+transform: skew(10deg, 10deg);
+transform: skewX(10deg);
+transform: skewY(10deg);
+```
+
+Il metodo matrix() combina tutte le trasformazioni 2D in una sola.
+I parametri seguono il seguente schema
+
+```css
+matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+```
+
+```css
+transform: matrix(1, -0.3, 0, 1, 0, 0);
+```
+
+---
+
+## CSS 3D transform
+
+CSS supporta anche le trasformazioni 3D, con metodi che permettono le rotazioni rispetto all'asse X, Y o Z
+
+```css
+transform: rotateX(100deg);
+transform: rotateY(150deg);
+transform: rotateZ(110deg);
+```
+
+---
+
+## CSS Transition
+
+Le transizioni CSS ti consentono di modificare i valori delle proprietà lentamente, entro una certa durata
+
+```css
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+```
+
+---
+
+## CSS utilizzo delle Transition
+
+Per creare un effetto di __transition__, occorre indicare due cose
+
+- su quale proprietà CSS aggiungere l'effetto
+- la sua durata
+
+---
+
+## CSS Transition - esempi
+
+Transition della sola larghezza
+
+```css
+#div {
+    border: 1px solid black;
+    width: 100px;      
+    height: 100px;
+    transition: width 2s;
+}
+#div:hover {
+    width: 200px;
+    height: 200px;
+    border: 2px dotted red;
+}
+```
+
+---
+
+## CSS Transition - esempi
+
+Transition di larghezza e altezza
+
+```css
+#div {
+    border: 1px solid black;
+    width: 100px;      
+    height: 100px;
+    transition: width 2s, height 2s;
+}
+#div:hover {
+    width: 200px;
+    height: 200px;
+    border: 2px dotted red;
+}
+```
+
+---
+
+## CSS Transition - esempi
+
+Transition di tutte le proprietà
+
+```css
+#div {
+    border: 1px solid black;
+    width: 100px;      
+    height: 100px;
+    transition: all 2s;
+}
+#div:hover {
+    width: 200px;
+    height: 200px;
+    border: 2px dotted red;
+}
+```
+
+---
+
+## CSS Animation
+
+Animation permette la creazione di animazioni senza l'uso di Javascript
+
+Un'animazione consente a un elemento di cambiare gradualmente da uno stile all'altro.
+
+Si possono modificare tutte le proprietà CSS, tutte le volte che si vuole.
+
+Per utilizzare animation occorre specificare alcuni __@keyframe__ per l'animazione.
+
+I __@keyframe__ contengono gli stili che l'elemento dovrà avere.
+
+---
+
+## CSS Animation - proprietà
+
+- @keyframes : lo stile dell'elemento
+- animation-name : nome del keyframe
+- animation-duration : durata
+- animation-delay : ritardo
+- animation-iteration-count : il numero di esecuzione di keyframe o infinite
+- animation-direction : la direzione dell'animazione
+- animation-timing-function : la velocità dell'animazione
+- animation-fill-mode : lo stile per l'elemento di destinazione quando l'animazione non viene riprodotta
+- animation : la proprietà cumulativa
+
+---
+
+## CSS Animation - esempi - rotazione
+
+Viene impostato il keyframe __rotation__ da eseguire in 10 secondi, all'infinito, in modo lineare.
+
+```css
+.rotazione{
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+```
+
+Esempi: <https://freefrontend.com/css-animation-examples/>
+
+---
+
+## CSS Image Filter
+
+Sulle immagini è possibile inserire un __filter__, in modo che l'immagine venga visualizzata con uno stile diverso.
+
+I filtri possibili sono:
+
+```css
+filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%);
+```
+
+---
+
+## CSS Resize
+
+La proprietà __resize__ permette di dare all'utente la possibilità di ridimensionare un elemento
+
+In questo modo si aumenta l'interazione che gli utenti possono avere con gli elementi della pagina.
+
+---
+
+## CSS var
+
+I CSS possono dichiarare delle variabili, utilizzabili successivamente all'interno delle proprietà
+
+La dichiarazione di una variabile richiede l'utilizzo di una etichetta preceduta da un doppio meno e la dichiarazione all'interno del selector :root
+
+```css
+:root {
+  --rosso: #ff0000;
+  --bianco: #ffffff;
+}
+
+body {
+    background-color: var(--rosso);
+    color: var(--bianco);
+}
 ```
 
 ---

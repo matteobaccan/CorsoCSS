@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>Transition</title>
+  <style>
+    #div {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      transition: width 2s;
+    }
+
+    #div:hover {
+      width: 200px;
+      height: 200px;
+      border: 2px dotted red;
+    }
+
+    #div2 {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      transition: width 2s, height 2s;
+    }
+
+    #div2:hover {
+      width: 200px;
+      height: 200px;
+      border: 2px dotted red;
+    }
+
+    #div3 {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      transition: all 2s;
+    }
+
+    #div3:hover {
+      width: 200px;
+      height: 200px;
+      border: 2px dotted red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="div">Contenuto del<br>DIV</div>
+  <div id="div2">Contenuto del<br>DIV2</div>
+  <div id="div3">Contenuto del<br>DIV3</div>
+</body>
+
+</html>
