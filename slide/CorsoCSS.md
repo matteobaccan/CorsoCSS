@@ -1335,7 +1335,7 @@ Per creare un effetto di __transition__, occorre indicare due cose
 
 ---
 
-## CSS Transition - esempi
+## CSS Transition - esempi1
 
 Transition della sola larghezza
 
@@ -1355,7 +1355,7 @@ Transition della sola larghezza
 
 ---
 
-## CSS Transition - esempi
+## CSS Transition - esempi2
 
 Transition di larghezza e altezza
 
@@ -1375,7 +1375,7 @@ Transition di larghezza e altezza
 
 ---
 
-## CSS Transition - esempi
+## CSS Transition - esempi3
 
 Transition di tutte le proprietà
 
