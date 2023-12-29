@@ -18,7 +18,6 @@ jobs:
     - name: Generate pdf
       run: | 
         cd slide
-        cd slide
         cp 'CorsoCSS.md' 'CorsoCSS-backup.md'
         sed -i "s/%date%/$(date +'%Y-%m-%d')/g" 'CorsoCSS.md'
         sed -i "s/%time%/$(date +'%H:%M')/g" 'CorsoCSS.md'
