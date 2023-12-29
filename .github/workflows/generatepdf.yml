@@ -15,12 +15,16 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: generate pdf
+    - name: Generate pdf
       run: | 
         cd slide
-        npx @marp-team/marp-cli@latest CorsoCSS.md --pdf --allow-local-files
-
-#        docker run --rm --init -v $PWD:/home/marp/app/ -e LANG="it_IT.UTF-8" -e MARP_USER="$(id -u):$(id -g)" marpteam/marp-cli CorsoCSS.md --pdf --allow-local-files
+        cd slide
+        cp 'CorsoCSS.md' 'CorsoCSS-backup.md'
+        sed -i "s/%date%/$(date +'%Y-%m-%d')/g" 'CorsoCSS.md'
+        sed -i "s/%time%/$(date +'%H:%M')/g" 'CorsoCSS.md'
+        npx @marp-team/marp-cli@latest 'CorsoCSS.md' --pdf --allow-local-files --pdf-outlines --pdf-outlines.pages=false
+        rm 'CorsoCSS.md'
+        mv 'CorsoCSS-backup.md' 'CorsoCSS.md'
       
     - name: commit & push
       run: |
