@@ -1020,7 +1020,7 @@ __list-style-image:__ referenzia una immagine da unire alla voce
 
 ---
 
-## CSS liste
+## CSS liste - 2
 
 __list-style-position__: definisce la posizione del marker di lista, se deve essere
 
@@ -1060,7 +1060,7 @@ __display__ a __none__ permette di nascondere degli elementi a video
 
 ---
 
-## CSS display
+## CSS display - 2
 
 Esempi di __display__ block sono
 
