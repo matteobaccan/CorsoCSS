@@ -66,18 +66,25 @@ Iscrivetevi e seguite il profilo creato apposta per il corso
 
 ## CSS – editor
 
-Editor
-
 - Codepen.io
 - Notepad
 - Notepad++
 - VisualStudio Code
+- Codespace di GitHub
 
 Va bene qualsiasi editor, non visuale, meglio se con syntax highlighter e code completion
 
 Le slide e i sorgenti del corso, liberamente ispirati a <https://www.w3schools.com> e costantemente aggiornati, sono disponibili a questo indirizzo
 
 <https://github.com/matteobaccan/CorsoCSS>
+
+---
+
+## CSS
+
+![center width:450px](img/html-css.jpg)
+
+Dal gruppo Coding Chess di Facebook
 
 ---
 
