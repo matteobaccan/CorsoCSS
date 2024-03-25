@@ -24,7 +24,23 @@ img[alt~='center'] {
 h2 {
     color: #e50000;
     position: absolute;
-    top: 30px;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    padding: 15px 0px 0px 75px;    
+    height: 70px;
+    border-bottom: 1px solid red;
+    margin: 0px;
+}
+h3 {
+    color: #e50000;
+}
+footer {
+    width: 100%;
+    left: 5px;
+    bottom: 0;
+    padding: 0 0 10px 10px;
 }
 " -->
 
@@ -34,11 +50,11 @@ h2 {
 
 Queste slide nascono dalla mia curiosità verso CSS3 e dall'esperienza che ho accumulato nel corso degli anni.
 
-La struttura base del corso ripercorre i passi seguiti da w3schools, li arricchisce con nuovi esempi ed una serie di slide in italiano.
+La struttura base del corso ripercorre i passi seguiti da w3schools e li arricchisce con nuovi esempi ed una serie di slide in italiano.
 
 ---
 
-## CSS
+## CSS - di cosa si tratta?
 
 __Cascading Style Sheets__ : in italiano fogli di stile a cascata
 
@@ -82,7 +98,7 @@ Le slide e i sorgenti del corso, liberamente ispirati a <https://www.w3schools.c
 
 ## CSS
 
-![center width:450px](img/html-css.jpg)
+![center width:380px](img/html-css.jpg)
 
 Dal gruppo Coding Chess di Facebook
 
@@ -1544,7 +1560,7 @@ Un buon compromesso può essere l’uso delle seguenti media query
 
 ---
 
-Fonti
+## Fonti
 
 <https://www.w3schools.com> : argomenti ed idee per esempi
 <https://it.wikipedia.org> : definizioni e argomenti
