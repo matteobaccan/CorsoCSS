@@ -4,21 +4,21 @@
 <head>
   <title>Titolo della pagina</title>
   <style>
-    div p {
-      background-color: red;
-    }
+div p {
+  background-color: red;
+}
 
-    div>p {
-      color: white;
-    }
+div > p {
+  color: white;
+}
 
-    h3+span {
-      color: yellow;
-    }
+h3 + span {
+  color: blue;
+}
 
-    h2~h3 {
-      border: 1px solid black;
-    }
+h2 ~ h3 {
+  border: 1px solid black;
+}
   </style>
 </head>
 
@@ -26,11 +26,13 @@
   <h1>Intestazione 1</h1>
   <div>
     <h2>Intestazione 2</h2>
+    <p> div &gt; p</p>
     <span>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </span>
-    <h3>Intestazione 2</h3>
+    <h3>Intestazione 3</h3>
     <span>
+      prova
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </span>
   </div>

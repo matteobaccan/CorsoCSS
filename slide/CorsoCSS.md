@@ -397,8 +397,8 @@ selector::pseudoelemento {
 
 Un pseudo elemento viene utilizzato per applicare uno stile a una parte specifica di un elemento.
 
-__::after__ prima dell’elemento
-__::before__ dopo l’elemento
+__::after__ dopo l'elemento
+__::before__ prima dell'elemento
 __::first-child__ è il primo elemento di una lista
 
 ---
