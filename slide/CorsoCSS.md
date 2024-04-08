@@ -319,13 +319,13 @@ Per determinare la relazione viene usato un __combinator__. I combinator possono
 
 ## CSS selector combinator - tipologie
 
-### discendente (spazio)
+### discendente (spazio) - un qualsiasi discendente
 
 ```css
 div p { background-color: red; }
 ```
 
-### figlio (>)
+### figlio (>) - solo i figli diretti
 
 ```css
 div > p { color: white; }
@@ -335,13 +335,13 @@ div > p { color: white; }
 
 ## CSS selector combinator - fratelli
 
-### fratelli adiacenti (+)
+### fratelli adiacenti (+) - solo il primo fratello
 
 ```css
 h3 + span { color: white; }
 ```
 
-### fratelli generali (~)
+### fratelli generali (~) - tutti i fratelli
 
 ```css
 h2 ~ h3 { border: 1px solid black; }
@@ -351,7 +351,7 @@ h2 ~ h3 { border: 1px solid black; }
 
 ## CSS selector pseudo classe
 
-Una pseudo classe identifica uno stato speciale di un tag.
+Una pseudo classe identifica uno stato speciale di un tag: p.e. hover
 
 La sintassi di utilizzo è simile alla sintassi base, con l’aggiunta di : e il tipo di pseudoclasse
 
@@ -381,7 +381,7 @@ Sul sito dei developer Mozilla è possibile averne un elenco completo
 
 ## CSS selector pseudo elemento
 
-Un pseudo elemento viene utilizzato per applicare uno stile a una parte specifica di un elemento.
+Un pseudo elemento viene utilizzato per applicare uno stile a una parte specifica di un elemento: p.e. ::after
 
 La sintassi di utilizzo è simile alle pseudo classi, con l’aggiunta di un doppio : e il tipo di pseudo elemento
 
@@ -583,6 +583,9 @@ background-repeat: no-repeat; background-position: right top;">Lorem ipsum</div>
 
 background-attachment
 
+fixed - il background è attaccato al viewport
+scroll - il background è attaccato al contenuto
+
 ```html
 <div style="background-image: url(gattino.gif); 
 background-attachment:fixed;">Lorem ipsum</div>
@@ -620,8 +623,12 @@ __hidden__ - bordo nascosto
 ## CSS border-style - note
 
 Da notare che la proprietà può essere indicata anche 2, 3 o 4 volte con valori diversi.
-Se indicata 2 volte: vengono indicati i bordi superiore/inferiore e destro/sinistro.
-Se 3: bordo superiore, bordo destro/sinistro e inferiore. Se 4: bordo superiore, destro, inferiore e sinistro.
+
+Se 2: vengono indicati i bordi superiore/inferiore e destro/sinistro.
+
+Se 3: bordo superiore, bordo destro/sinistro e inferiore.
+
+Se 4: bordo superiore, destro, inferiore e sinistro.
 
 ---
 
