@@ -252,15 +252,15 @@ tag {
     color: green;
 }
 
-#idtag {
+#id {
     color: red;
 }
 
-.classenome {
+.classe {
     color: magenta;
 }
 
-tag.classenome {
+tag.classe {
     color: magenta;
 }
 ```
@@ -429,10 +429,10 @@ p[test1] {
 }
 ```
 
-Seleziono solo il tag __p__ che ha un attributo chiamato __test2__ col valore __pippo__
+Seleziono solo il tag __p__ che ha un attributo chiamato __test2__ col valore __foobar__
 
 ```css
-p[test2=pippo] {
+p[test2=foobar] {
     color: green;
 }
 ```
@@ -607,16 +607,19 @@ __border__ può essere usata in modo compatto o specificandone le singole caratt
 ## CSS border-style
 
 __border-style__ indica lo stile del bordo
-__dotted__ - bordo punteggiato
-__dashed__ - bordo tratteggiato
-__solid__ - bordo continuo
-__double__ - doppio bordo
-__groove__ - bordo scanalato 3D
-__ridge__ - bordo increspato 3D
-__inset__ - bordo del riquadro 3D
-__outset__ - bordo iniziale 3D
-__none__ - nessun bordo
-__hidden__ - bordo nascosto
+
+```text
+dotted - bordo punteggiato
+dashed - bordo tratteggiato
+solid - bordo continuo
+double - doppio bordo
+groove - bordo scanalato 3D
+ridge - bordo increspato 3D
+inset - bordo del riquadro 3D
+outset - bordo iniziale 3D
+none - nessun bordo
+hidden - bordo nascosto
+```
 
 ---
 
@@ -710,7 +713,7 @@ border-bottom-style: dotted;
 
 ## CSS border - proprietà unica
 
-Le proprietà precedenti possono essere compresse nell’unica proprietà __border.__
+Le proprietà precedenti possono essere compresse nell'unica proprietà __border.__
 
 Possiamo quindi specificare le proprietà:
 
@@ -875,15 +878,15 @@ __text-transform__: capitalize;
 
 La spaziatura dei testi, la loro altezza, lo spazio fra parole e caratteri sono tutte caratteristiche che possono essere variate tramite le proprietà:
 
-__text-indent__
+__text-indent__ : l’indentazione del testo
 
-__letter-spacing__
+__letter-spacing__ : lo spazio tra le lettere
 
-__line-height__
+__line-height__ : l’altezza della riga
 
-__word-spacing__
+__word-spacing__ : lo spazio tra le parole
 
-__white-space__
+__white-space__ : la gestione degli spazi bianchi
 
 ---
 
@@ -1020,13 +1023,13 @@ Il tag __a__ può essere personalizzato in base allo stato del link, utilizzando
 
 Gli stati dei link sono
 
-__a:link – link non visitato__
+__a:link__ – link non visitato
 
-__a:visited – link visitato__
+__a:visited__ – link visitato
 
-__a:hover – quando il mouse si posiziona sopra al link__
+__a:hover__ – quando il mouse si posiziona sopra al link
 
-__a:active – un link quando viene cliccato__
+__a:active__ – un link quando viene cliccato
 
 ---
 
