@@ -1095,11 +1095,11 @@ __display__ a __none__ permette di nascondere degli elementi a video
 
 ## CSS display - 2
 
-Esempi di __display__ block sono
+TAG con __display__ a __block__
 
 div, h1, h2, …, h6, p, form, header, footer e section
 
-Esempi di __display__ a __inline__ sono
+TAG con __display__ a __inline__
 
 span, a, img
 
