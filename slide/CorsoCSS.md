@@ -1449,7 +1449,7 @@ I __@keyframe__ contengono gli stili che l'elemento dovrà avere.
 
 ## CSS Animation - proprietà
 
-- @keyframes : lo stile dell'elemento
+- __@keyframes__ : lo stile dell'elemento
 - animation-name : nome del keyframe
 - animation-duration : durata
 - animation-delay : ritardo
