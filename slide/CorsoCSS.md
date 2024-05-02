@@ -28,7 +28,7 @@ h2 {
     background-color: white;
     width: 100%;
     left: 0;
-    padding: 15px 0px 0px 75px;    
+    padding: 15px 0px 0px 75px;
     height: 70px;
     border-bottom: 1px solid red;
     margin: 0px;
@@ -424,7 +424,7 @@ selector[attributo=valore] {
 Seleziono solo il tag __p__ che ha un attributo chiamato __test1__
 
 ```css
-p[test1] {  
+p[test1] {
     color: red;
 }
 ```
@@ -566,14 +566,14 @@ background-image
 background-repeat
 
 ```html
-<div style="background-image: url(gattino.gif); 
+<div style="background-image: url(gattino.gif);
 background-repeat: repeat-x;">Lorem ipsum</div>
 ```
 
 background-position
 
 ```html
-<div style="background-image: url(gattino.gif); 
+<div style="background-image: url(gattino.gif);
 background-repeat: no-repeat; background-position: right top;">Lorem ipsum</div>
 ```
 
@@ -587,10 +587,10 @@ fixed - il background è attaccato al viewport
 scroll - il background è attaccato al contenuto
 
 ```html
-<div style="background-image: url(gattino.gif); 
+<div style="background-image: url(gattino.gif);
 background-attachment:fixed;">Lorem ipsum</div>
 
-<div style="background-image: url(gattino.gif); 
+<div style="background-image: url(gattino.gif);
 background-attachment:scroll;">Lorem ipsum</div>
 ```
 
@@ -1007,7 +1007,7 @@ L’utilizzo di icone permette di rendere più intuitive le pagine.
 Oltre a alle icone google ci sono molte alternative in rete, come quelle fornite da fontawesome <https://fontawesome.com/>
 
 ```html
-<link rel="stylesheet" 
+<link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 <i class="fa-regular fa-user"></i>
@@ -1380,7 +1380,7 @@ Transition della sola larghezza
 ```css
 #div {
     border: 1px solid black;
-    width: 100px;      
+    width: 100px;
     height: 100px;
     transition: width 2s;
 }
@@ -1400,7 +1400,7 @@ Transition di larghezza e altezza
 ```css
 #div {
     border: 1px solid black;
-    width: 100px;      
+    width: 100px;
     height: 100px;
     transition: width 2s, height 2s;
 }
@@ -1420,7 +1420,7 @@ Transition di tutte le proprietà
 ```css
 #div {
     border: 1px solid black;
-    width: 100px;      
+    width: 100px;
     height: 100px;
     transition: all 2s;
 }
