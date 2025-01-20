@@ -12,15 +12,16 @@
   </question>
 
 <!-- question: 2757  -->
+<!-- Nuova domanda: border-radius -->
   <question type="multichoice">
     <name>
-      <text>Box Model</text>
+        <text>Proprietà CSS per arrotondare gli angoli</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">Quale di queste proprietà CSS viene utilizzata per aggiungere bordi ad un elemento?<br></p>]]></text>
+        <text>Quale delle seguenti proprietà CSS viene utilizzata per impostare l'arrotondamento degli angoli di un elemento?</text>
     </questiontext>
     <generalfeedback format="html">
-      <text></text>
+        <text></text>
     </generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
@@ -31,51 +32,51 @@
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
     <correctfeedback format="html">
-      <text>Risposta corretta.</text>
+        <text>Risposta corretta.</text>
     </correctfeedback>
     <partiallycorrectfeedback format="html">
-      <text>Risposta parzialmente esatta.</text>
+        <text>Risposta parzialmente esatta.</text>
     </partiallycorrectfeedback>
     <incorrectfeedback format="html">
-      <text>Risposta errata.</text>
+        <text>Risposta errata.</text>
     </incorrectfeedback>
-    <shownumcorrect/>
     <answer fraction="100" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">border<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>border-radius</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">border-style<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>border-style</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">border-width<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>border-width</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">border-color<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>border-color</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
   </question>
 
 <!-- question: 2756  -->
+<!-- Nuova domanda: text-shadow -->
   <question type="multichoice">
     <name>
-      <text>Colore del testo</text>
+        <text>Proprietà CSS per l'ombra del testo</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">Qual è la proprietà CSS utilizzata per cambiare il colore del testo?<br></p>]]></text>
+        <text>Quale delle seguenti proprietà CSS viene utilizzata per impostare l'ombra del testo?</text>
     </questiontext>
     <generalfeedback format="html">
-      <text></text>
+        <text></text>
     </generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
@@ -86,148 +87,149 @@
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
     <correctfeedback format="html">
-      <text>Risposta corretta.</text>
+        <text>Risposta corretta.</text>
     </correctfeedback>
     <partiallycorrectfeedback format="html">
-      <text>Risposta parzialmente esatta.</text>
+        <text>Risposta parzialmente esatta.</text>
     </partiallycorrectfeedback>
     <incorrectfeedback format="html">
-      <text>Risposta errata.</text>
+        <text>Risposta errata.</text>
     </incorrectfeedback>
-    <shownumcorrect/>
     <answer fraction="100" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">color<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>text-shadow</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">font-color<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>font-shadow</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">text-color<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>text-color</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">foreground-color<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>shadow-text</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
   </question>
 
 <!-- question: 2763  -->
-  <question type="multichoice">
+<!-- Nuova domanda: transition-duration -->
+<question type="multichoice">
     <name>
-      <text>Proprietà CSS per aggiungere bordi ad un elemento</text>
+        <text>Proprietà CSS per la durata della transizione</text>
     </name>
     <questiontext format="html">
-      <text>Quale di queste proprietà CSS viene utilizzata per aggiungere bordi ad un elemento?</text>
+        <text>Quale delle seguenti proprietà CSS viene utilizzata per definire la durata di una transizione?</text>
     </questiontext>
     <generalfeedback format="html">
-      <text></text>
+        <text></text>
     </generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
     <idnumber></idnumber>
     <single>true</single>
-    <shuffleanswers>false</shuffleanswers>
+    <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
-    <showstandardinstruction>1</showstandardinstruction>
+    <showstandardinstruction>0</showstandardinstruction>
     <correctfeedback format="html">
-      <text></text>
+        <text>Risposta corretta.</text>
     </correctfeedback>
     <partiallycorrectfeedback format="html">
-      <text></text>
+        <text>Risposta parzialmente esatta.</text>
     </partiallycorrectfeedback>
     <incorrectfeedback format="html">
-      <text></text>
+        <text>Risposta errata.</text>
     </incorrectfeedback>
     <answer fraction="100" format="html">
-      <text>border</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>transition-duration</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>border-style</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>transition-delay</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>border-width</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>transition-property</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>border-color</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>transition-timing-function</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
-  </question>
+</question>
 
 <!-- question: 2759  -->
-  <question type="multichoice">
+<!-- Nuova domanda: z-index -->
+<question type="multichoice">
     <name>
-      <text>Proprietà CSS per cambiare il colore del testo</text>
+        <text>Proprietà CSS per l'ordine di sovrapposizione</text>
     </name>
     <questiontext format="html">
-      <text>Qual è la proprietà CSS utilizzata per cambiare il colore del testo?</text>
+        <text>Quale delle seguenti proprietà CSS viene utilizzata per controllare l'ordine di sovrapposizione degli elementi?</text>
     </questiontext>
     <generalfeedback format="html">
-      <text></text>
+        <text></text>
     </generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
     <idnumber></idnumber>
     <single>true</single>
-    <shuffleanswers>false</shuffleanswers>
+    <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
-    <showstandardinstruction>1</showstandardinstruction>
+    <showstandardinstruction>0</showstandardinstruction>
     <correctfeedback format="html">
-      <text></text>
+        <text>Risposta corretta.</text>
     </correctfeedback>
     <partiallycorrectfeedback format="html">
-      <text></text>
+        <text>Risposta parzialmente esatta.</text>
     </partiallycorrectfeedback>
     <incorrectfeedback format="html">
-      <text></text>
+        <text>Risposta errata.</text>
     </incorrectfeedback>
     <answer fraction="100" format="html">
-      <text>color</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>z-index</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>font-color</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>position</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>text-color</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>display</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>foreground-color</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>overflow</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
-  </question>
+</question>
 
 <!-- question: 2775  -->
   <question type="multichoice">
@@ -1094,56 +1096,57 @@
   </question>
 
 <!-- question: 2758  -->
+<!-- Nuova domanda: transform: rotate -->
   <question type="multichoice">
     <name>
-      <text>Selettore CSS per selezionare tutti gli elementi di un documento HTML</text>
+        <text>Proprietà CSS per ruotare un elemento</text>
     </name>
     <questiontext format="html">
-      <text>Qual è il selettore CSS utilizzato per selezionare tutti gli elementi di un documento HTML?</text>
+        <text>Quale delle seguenti proprietà CSS viene utilizzata per ruotare un elemento?</text>
     </questiontext>
     <generalfeedback format="html">
-      <text></text>
+        <text></text>
     </generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
     <idnumber></idnumber>
     <single>true</single>
-    <shuffleanswers>false</shuffleanswers>
+    <shuffleanswers>true</shuffleanswers>
     <answernumbering>abc</answernumbering>
-    <showstandardinstruction>1</showstandardinstruction>
+    <showstandardinstruction>0</showstandardinstruction>
     <correctfeedback format="html">
-      <text></text>
+        <text>Risposta corretta.</text>
     </correctfeedback>
     <partiallycorrectfeedback format="html">
-      <text></text>
+        <text>Risposta parzialmente esatta.</text>
     </partiallycorrectfeedback>
     <incorrectfeedback format="html">
-      <text></text>
+        <text>Risposta errata.</text>
     </incorrectfeedback>
-    <answer fraction="0" format="html">
-      <text>#</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text>.</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
-    </answer>
     <answer fraction="100" format="html">
-      <text>*</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>transform: rotate()</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text>:</text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>rotate: transform()</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text>rotation: angle()</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text>transform: angle()</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
   </question>
 
@@ -1202,15 +1205,16 @@
   </question>
 
 <!-- question: 2755  -->
-  <question type="multichoice">
+<!-- Nuova domanda: @keyframes -->
+<question type="multichoice">
     <name>
-      <text>Selettori</text>
+        <text>Regola CSS per definire le fasi di un'animazione</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">Qual è il selettore CSS utilizzato per selezionare tutti gli elementi di un documento HTML?<br></p>]]></text>
+        <text>Quale delle seguenti è una regola CSS utilizzata per definire le fasi di un'animazione?</text>
     </questiontext>
     <generalfeedback format="html">
-      <text></text>
+        <text></text>
     </generalfeedback>
     <defaultgrade>1.0000000</defaultgrade>
     <penalty>0.3333333</penalty>
@@ -1221,40 +1225,39 @@
     <answernumbering>abc</answernumbering>
     <showstandardinstruction>0</showstandardinstruction>
     <correctfeedback format="html">
-      <text>Risposta corretta.</text>
+        <text>Risposta corretta.</text>
     </correctfeedback>
     <partiallycorrectfeedback format="html">
-      <text>Risposta parzialmente esatta.</text>
+        <text>Risposta parzialmente esatta.</text>
     </partiallycorrectfeedback>
     <incorrectfeedback format="html">
-      <text>Risposta errata.</text>
+        <text>Risposta errata.</text>
     </incorrectfeedback>
-    <shownumcorrect/>
-    <answer fraction="0" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">#<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
-    </answer>
-    <answer fraction="0" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">.<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
-    </answer>
     <answer fraction="100" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">*<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>@keyframes</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
     <answer fraction="0" format="html">
-      <text><![CDATA[<p dir="ltr" style="text-align: left;">:<br></p>]]></text>
-      <feedback format="html">
-        <text></text>
-      </feedback>
+        <text>@media</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
     </answer>
-  </question>
+    <answer fraction="0" format="html">
+        <text>@import</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text>@font-face</text>
+        <feedback format="html">
+            <text></text>
+        </feedback>
+    </answer>
+</question>
 
 <!-- question: 2771  -->
   <question type="multichoice">
