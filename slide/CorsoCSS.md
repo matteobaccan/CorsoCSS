@@ -441,7 +441,7 @@ p[test2=foobar] {
 
 ## CSS attribute selector - 1
 
-Seleziono un attributo che contiene la parola valore
+Seleziono un attributo che contiene la parola __valore__
 
 ```css
 selector[attributo~=valore] {
@@ -449,7 +449,7 @@ selector[attributo~=valore] {
 }
 ```
 
-Seleziono un attributo che inizia per valore (uguale o uguale seguito dal trattino)
+Seleziono un attributo che inizia per __valore__ (uguale o uguale seguito dal trattino)
 
 ```css
 selector[attributo|=valore] {
@@ -461,7 +461,7 @@ selector[attributo|=valore] {
 
 ## CSS attribute selector - 2
 
-Seleziono un attributo che inizia valore
+Seleziono un attributo che inizia __valore__
 
 ```css
 selector[attributo^=valore] {
@@ -469,7 +469,7 @@ selector[attributo^=valore] {
 }
 ```
 
-Seleziono un attributo che finisce per valore
+Seleziono un attributo che finisce per __valore__
 
 ```css
 selector[attributo$=valore] {
@@ -481,7 +481,7 @@ selector[attributo$=valore] {
 
 ## CSS attribute selector - 3
 
-Seleziono un attributo che contiene la sottostringa valore
+Seleziono un attributo che contiene la sottostringa __valore__
 
 ```css
 selector[attributo*=valore] {
