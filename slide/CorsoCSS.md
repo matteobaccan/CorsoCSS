@@ -28,8 +28,8 @@ h2 {
     background-color: white;
     width: 100%;
     left: 0;
-    padding: 15px 0px 0px 75px;
-    height: 70px;
+    padding: 10px 0px 0px 75px;
+    height: 65px;
     border-bottom: 1px solid red;
     margin: 0px;
 }
