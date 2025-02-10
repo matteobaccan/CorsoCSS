@@ -896,6 +896,10 @@ Con la proprietà __text-shadow__ è possibile impostare delle ombre ai testi:
 
 __text-shadow:__ \<orizzontale> \<verticale> \<sfocatura> \<colore>
 
+Alcuni esempi di ombre sono disponibili a questo indirizzo
+
+<https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/>
+
 ---
 
 ## CSS font
