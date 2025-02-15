@@ -1579,6 +1579,7 @@ Un buon compromesso può essere l’uso delle seguenti media query
 <https://www.w3schools.com> : argomenti ed idee per esempi
 <https://it.wikipedia.org> : definizioni e argomenti
 <https://www.w3.org/Style/CSS/specs.en.html> : specifiche CSS3
+<https://github.com/bradtraversy/50projects50days> : 50 Projects in 50 Days - HTML/CSS and JavaScript
 
 Ogni immagine inserita riporta la fonte
 
