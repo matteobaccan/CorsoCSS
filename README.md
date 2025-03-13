@@ -79,6 +79,11 @@ Ecco l'elenco degli esercizi disponibili:
     <li><a href="./esercizi/54-css-var.html">54-css-var.html</a> - Esercizio sulle variabili CSS.</li>
     <li><a href="./esercizi/55-css-transform.html">55-css-transform.html</a> - Esercizio sulle trasformazioni CSS.</li>
     <li><a href="./esercizi/56-css-media.html">56-css-media.html</a> - Esercizio sulle media queries CSS.</li>
+    <li><a href="./esercizi/57-css-nesting.html">57-css-nesting.html</a> - Esercizio sul nesting.</li>
+    <li><a href="./esercizi/58-css-scope.html">58-css-scope.html</a> - Esercizio sullo scope.</li>
+    <li><a href="./esercizi/59-css-layer.html">59-css-layer.html</a> - Esercizio sui layer.</li>
+    <li><a href="./esercizi/60-css-color-schema.html">60-css-color-schema.html</a> - Esercizio sul color schema.</li>
+    <li><a href="./esercizi/61-css-is-has.html">61-css-is-has.html</a> - Esercizio su is has.</li>
     <li><a href="./esercizi/MoodleTestCSS.xml">MoodleTestCSS.xml</a> - Test CSS per Moodle.</li>
 </ul>
 
