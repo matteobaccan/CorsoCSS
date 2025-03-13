@@ -1574,6 +1574,217 @@ Un buon compromesso può essere l’uso delle seguenti media query
 
 ---
 
+## CSS nesting
+
+le ultime evoluzioni e gli aggiornamenti del linguaggio CSS hanno introdotto la possibilità di nidificare le regole CSS.
+
+__Cosa significa "nidificare" le regole CSS?__
+
+In passato, quando si scriveva codice CSS, era necessario ripetere i selettori per ogni regola che si voleva applicare a un elemento specifico o ai suoi discendenti. Questo portava spesso a codice ridondante e difficile da leggere e mantenere.
+
+Con il nesting, invece, è possibile scrivere le regole CSS in modo più gerarchico e organizzato, raggruppando le regole relative a un elemento all'interno del selettore principale. Questo rende il codice più compatto, leggibile e intuitivo.
+
+---
+
+## CSS prima e dopo
+
+```css
+.contenitore {
+  border: 5px solid black;
+}
+
+.contenitore p {
+  color: red;
+  font-weight: bold;
+}
+```
+
+```css
+.contenitore {
+  border: 5px solid black;
+
+  p {
+    color: red;
+    font-weight: bold;
+  }
+}
+```
+
+<https://caniuse.com/css-nesting>
+
+---
+
+## CSS @scope
+
+La regola __@scope__ in CSS è uno strumento potente per:
+
+- Creare confini di stile (style boundaries).
+- Prevenire conflitti di stile.
+- Costruire CSS modulare e mantenibile.
+- Indirizza delle parti specifiche del DOM.
+
+È una funzionalità che vale la pena imparare man mano che diventa più ampiamente supportata.
+
+<https://caniuse.com/css-cascade-scope>
+
+---
+
+## CSS @scope sintassi
+
+Sintassi
+
+```css
+@scope (<radice-ambito>) [to (<limite-ambito>]) {
+  /* Regole CSS che si applicano all'interno dell'ambito */
+}
+```
+
+---
+
+## CSS @scope - esempio
+
+```html
+Non funziona con FireFox
+<div class="card">
+    <p>Questo è un paragrafo all'interno della card.</p>
+    <div class="nested">
+        <p>Questo è un paragrafo annidato.</p>
+    </div>
+    <div class="limit">
+        <p>Questo è un paragrafo fuori dal limite.</p>
+    </div>
+</div>
+<p>Questo è un paragrafo al di fuori della card.</p>
+```
+
+```css
+@scope (.card) to (.limit) {
+  p {
+    color: red;
+    font-weight: bold;
+  }
+}
+```
+
+---
+
+## CSS @layer
+
+La regola @layer nel CSS è uno strumento potente per poter:
+
+- Gestire i conflitti di stile.
+- Organizzare il codice CSS in modo modulare.
+- Controllare la specificità delle regole.
+- Controllare l'ordine del CSS
+- Al momento la feature non è molto diffusa ma verrà presto supportata
+
+<https://caniuse.com/css-cascade-layers>
+
+---
+
+## CSS @layer esempio
+
+Non rispetto la sequenza delle definizioni e cambio le priorità
+
+```css
+@layer components;
+@layer base;
+
+@layer base {
+    body {
+        background-color: lightgray;
+    }
+}
+
+@layer components {
+    body {
+        background-color: lightgreen;
+    }
+}
+```
+
+---
+
+## CSS Color scheme
+
+La media query @media (prefers-color-scheme: ...) è fondamentale per creare siti che rispettino lo schema colore degli utenti.
+Ci permette di migliorare la user experience, aumentare l'accessibilità e creare siti web più moderni e personalizzati.
+Usando le variabili CSS è possibile scegliere lo schema colore e alternarlo.
+
+<https://caniuse.com/?search=prefers-color-scheme>
+
+---
+
+## CSS Color scheme - esempio
+
+```css
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #333;
+    --text-color: white;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+```
+
+---
+
+## CSS :is e :has
+
+Gli pseudo-selettori __:is__ e __:has__ sono due potenti strumenti introdotti nelle versioni più recenti di CSS per semplificare e migliorare la selezione degli elementi.
+
+__:is__ è un selector di raggruppamento
+__:has__ è un selector di matching fra discendenze
+
+---
+
+## CSS :is
+
+__:is__
+Il selettore :is (precedentemente noto come :matches) permette di raggruppare più selettori in uno solo, riducendo la ripetizione del codice e migliorando la leggibilità. È utile quando si desidera applicare lo stesso stile a diversi selettori
+
+```css
+:is(selector1, selector2, selector3) {
+  proprietà: valore;
+}
+```
+
+```css
+:is(h1, h2, h3) {
+  color: red;
+}
+```
+
+---
+
+## CSS :has
+
+__:has__
+Il selettore :has permette di selezionare un elemento se contiene un determinato discendente che corrisponde al selettore specificato. È particolarmente utile per applicare stili a un elemento in base ai suoi contenuti.
+
+```css
+selector:has(selector) {
+  proprietà: valore;
+}
+```
+
+```css
+div:has(p) {
+  border: 1px solid black;
+}
+```
+
+---
+
 ## Fonti
 
 <https://www.w3schools.com> : argomenti ed idee per esempi

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>Scope</title>
+  <style>
+    @scope (.card) to (.limit) {
+      p {
+        color: red;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  Non funziona con FireFox
+  <div class="card">
+    <p>Questo è un paragrafo all'interno della card.</p>
+    <div class="nested">
+      <p>Questo è un paragrafo annidato.</p>
+    </div>
+    <div class="limit">
+      <p>Questo è un paragrafo fuori dal limite.</p>
+    </div>
+  </div>
+  <p>Questo è un paragrafo al di fuori della card.</p>
+</body>
+
+</html>

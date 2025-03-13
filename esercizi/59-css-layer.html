@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>Layer</title>
+  <style>
+    @layer components;
+    @layer base;
+
+    @layer base {
+      body {
+        background-color: lightgray;
+      }
+    }
+
+    @layer components {
+      body {
+        background-color: lightgreen;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  Corpo della pagina
+</body>
+
+</html>

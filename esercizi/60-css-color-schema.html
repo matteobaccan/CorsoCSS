@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>Color schema</title>
+  <style>
+    :root {
+      --background-color: white;
+      --text-color: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background-color: #333;
+        --text-color: white;
+      }
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+  </style>
+</head>
+
+<body>
+  Corpo della pagina; cambia l'impostazione di sistema delle APP per variare il colore della pagina
+</body>
+
+</html>
