@@ -1281,79 +1281,6 @@ background-image: linear-gradient(red, black);
 
 ---
 
-## CSS 2D transform
-
-Le transform CSS ti consentono di spostare, ruotare, ridimensionare e inclinare gli elementi.
-
-Tutte queste trasformazioni avvengono tramite la proprietà
-
-```css
-transform
-```
-
----
-
-## CSS 2D transform - esempi
-
-Il metodo translate() muove un elemento dalla sua posizione rispetto all'asse X e Y
-
-```css
-transform: translate(80px, 10px);
-```
-
-Il metodo rotate() ruota un elemento in senso orario o antiorario in base a un grado
-
-```css
-transform: rotate(10deg);
-transform: rotate(-10deg);
-```
-
-Il metodo scale() aumenta o diminuisce la dimensione di un elemento per larghezza e altezza, mentre i metodi scaleX() e scaleY() lavorano su una sola dimensione
-
-```css
-transform: scale(3, 2);
-transform: scale(0.8, 0.2);
-transform: scaleX(3);
-transform: scaleY(4);
-```
-
----
-
-## CSS 2D transform - esempi2
-
-Il metodo skew() inclina un elemento lungo gli assi X e Y, mentre i metodi skewX() e skewY() lavorano su un singolo asse
-
-```css
-transform: skew(10deg, 10deg);
-transform: skewX(10deg);
-transform: skewY(10deg);
-```
-
-Il metodo matrix() combina tutte le trasformazioni 2D in una sola.
-I parametri seguono il seguente schema
-
-```css
-matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
-```
-
-```css
-transform: matrix(1, -0.3, 0, 1, 0, 0);
-```
-
----
-
-## CSS 3D transform
-
-CSS supporta anche le trasformazioni 3D, con metodi che permettono le rotazioni rispetto all'asse X, Y o Z
-
-```css
-transform: rotateX(100deg);
-transform: rotateY(150deg);
-transform: rotateZ(110deg);
-```
-
----
-
 ## CSS Transition
 
 Le transizioni CSS ti consentono di modificare i valori delle proprietà lentamente, entro una certa durata
@@ -1533,6 +1460,79 @@ body {
     background-color: var(--rosso);
     color: var(--bianco);
 }
+```
+
+---
+
+## CSS 2D transform
+
+Le transform CSS ti consentono di spostare, ruotare, ridimensionare e inclinare gli elementi.
+
+Tutte queste trasformazioni avvengono tramite la proprietà
+
+```css
+transform
+```
+
+---
+
+## CSS 2D transform - esempi
+
+Il metodo translate() muove un elemento dalla sua posizione rispetto all'asse X e Y
+
+```css
+transform: translate(80px, 10px);
+```
+
+Il metodo rotate() ruota un elemento in senso orario o antiorario in base a un grado
+
+```css
+transform: rotate(10deg);
+transform: rotate(-10deg);
+```
+
+Il metodo scale() aumenta o diminuisce la dimensione di un elemento per larghezza e altezza, mentre i metodi scaleX() e scaleY() lavorano su una sola dimensione
+
+```css
+transform: scale(3, 2);
+transform: scale(0.8, 0.2);
+transform: scaleX(3);
+transform: scaleY(4);
+```
+
+---
+
+## CSS 2D transform - esempi2
+
+Il metodo skew() inclina un elemento lungo gli assi X e Y, mentre i metodi skewX() e skewY() lavorano su un singolo asse
+
+```css
+transform: skew(10deg, 10deg);
+transform: skewX(10deg);
+transform: skewY(10deg);
+```
+
+Il metodo matrix() combina tutte le trasformazioni 2D in una sola.
+I parametri seguono il seguente schema
+
+```css
+matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+```
+
+```css
+transform: matrix(1, -0.3, 0, 1, 0, 0);
+```
+
+---
+
+## CSS 3D transform
+
+CSS supporta anche le trasformazioni 3D, con metodi che permettono le rotazioni rispetto all'asse X, Y o Z
+
+```css
+transform: rotateX(100deg);
+transform: rotateY(150deg);
+transform: rotateZ(110deg);
 ```
 
 ---
