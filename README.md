@@ -71,7 +71,7 @@ Ecco l'elenco degli esercizi disponibili:
     <li><a href="./esercizi/46-css-clear.html">46-css-clear.html</a> - Esercizio sul clear CSS.</li>
     <li><a href="./esercizi/47-css-align.html">47-css-align.html</a> - Esercizio sull'allineamento CSS.</li>
     <li><a href="./esercizi/48-css-important.html">48-css-important.html</a> - Esercizio sull'uso di !important in CSS.</li>
-    <li><a href="./esercizi/49-css-gradien.html">49-css-gradien.html</a> - Esercizio sui gradienti CSS.</li>
+    <li><a href="./esercizi/49-css-gradient.html">49-css-gradient.html</a> - Esercizio sui gradienti CSS.</li>
     <li><a href="./esercizi/50-css-transition.html">50-css-transition.html</a> - Esercizio sulle transizioni CSS.</li>
     <li><a href="./esercizi/51-css-animation.html">51-css-animation.html</a> - Esercizio sulle animazioni CSS.</li>
     <li><a href="./esercizi/52-css-filter.html">52-css-filter.html</a> - Esercizio sui filtri CSS.</li>
