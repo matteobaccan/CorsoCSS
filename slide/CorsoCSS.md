@@ -1434,6 +1434,8 @@ filter: saturate(30%);
 filter: sepia(60%);
 ```
 
+<https://caniuse.com/css-filters>
+
 ---
 
 ## CSS Resize
@@ -1441,6 +1443,8 @@ filter: sepia(60%);
 La proprietà __resize__ permette di dare all'utente la possibilità di ridimensionare un elemento
 
 In questo modo si aumenta l'interazione che gli utenti possono avere con gli elementi della pagina.
+
+<https://caniuse.com/css-resize>
 
 ---
 
@@ -1462,6 +1466,8 @@ body {
 }
 ```
 
+<https://caniuse.com/css-variables>
+
 ---
 
 ## CSS 2D transform
@@ -1473,6 +1479,8 @@ Tutte queste trasformazioni avvengono tramite la proprietà
 ```css
 transform
 ```
+
+<https://caniuse.com/transforms2d>
 
 ---
 
@@ -1571,6 +1579,7 @@ Un buon compromesso può essere l’uso delle seguenti media query
 ```
 
 <https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/introduzione/>
+<https://caniuse.com/css-mediaqueries>
 
 ---
 
@@ -1764,6 +1773,8 @@ Il selettore :is (precedentemente noto come :matches) permette di raggruppare pi
 }
 ```
 
+<https://caniuse.com/css-matches-pseudo>
+
 ---
 
 ## CSS :has
@@ -1782,6 +1793,8 @@ div:has(p) {
   border: 1px solid black;
 }
 ```
+
+<https://caniuse.com/css-has>
 
 ---
 
