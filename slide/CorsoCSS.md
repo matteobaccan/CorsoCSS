@@ -1798,6 +1798,41 @@ div:has(p) {
 
 ---
 
+## Select
+
+Da Chrome 135 è possibile personalizzare la select
+
+```css
+appearance: base-select;
+```
+
+Precedentemente non era possibile mettere codice HTML nelle select, cambiando l'appearance ora è possibile.
+
+<https://developer.chrome.com/blog/a-customizable-select?hl=it>
+<https://caniuse.com/?search=base-select>
+
+---
+
+## text-wrap: balance
+
+Tenta di equilibrare il testo distribuendolo in modo armonico fra le righe, evitando di avere righe con contenuti più pieni e righe con contenuti più rarefatti.
+
+<https://caniuse.com/?search=text-wrap%3A%20balance>
+
+---
+
+## Content-visibility
+
+Questa proprietà avvisa il browser di non procedere al rendering degli elementi fuori dalla viewport.
+
+Questo approccio permette un caricamento più veloce della pagina e una migliore esperienza utente, in quanto il browser non deve calcolare lo stile e il layout degli elementi invisibili.
+
+<https://drafts.csswg.org/css-contain-2/#content-visibility>
+<https://web.dev/articles/content-visibility?hl=it>
+<https://caniuse.com/css-content-visibility>
+
+---
+
 ## Fonti
 
 <https://www.w3schools.com> : argomenti ed idee per esempi
@@ -1811,6 +1846,15 @@ Ogni immagine inserita riporta la fonte
 
 ## Disclaimer
 
-L'autore ha generato questo testo in parte con GPT-3, il modello di generazione del linguaggio su larga scala di OpenAI. Dopo aver generato la bozza della lingua, l'autore ha rivisto, modificato e rivisto la lingua a proprio piacimento e si assume la responsabilità  ultima del contenuto di questa pubblicazione.
+Questo materiale è stato realizzato con le seguenti modalità:
 
-L'immagine di sfondo è stata generata con <https://app.haikei.app>
+- Contenuto testuale
+Redatto attraverso sistemi di AI per la generazione della bozza iniziale, successivamente rielaborato, verificato e integrato manualmente dall'autore.
+
+- Elementi grafici
+L'immagine di sfondo è stata generata tramite [Haikei.app](https://app.haikei.app). Eventuali altri elementi visivi derivano da banche immagini royalty-free o creazioni originali.
+
+- Ricerche
+I dati e le informazioni citate sono state raccolte da fonti pubbliche accessibili online, selezionate e contestualizzate in modo critico dall'autore.
+
+La direzione intellettuale, le scelte contenutistiche e l'accuratezza delle informazioni restano sotto la piena responsabilità dell'autore.

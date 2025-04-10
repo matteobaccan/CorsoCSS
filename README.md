@@ -84,6 +84,9 @@ Ecco l'elenco degli esercizi disponibili:
     <li><a href="./esercizi/59-css-layer.html">59-css-layer.html</a> - Esercizio sui layer.</li>
     <li><a href="./esercizi/60-css-color-schema.html">60-css-color-schema.html</a> - Esercizio sul color schema.</li>
     <li><a href="./esercizi/61-css-is-has.html">61-css-is-has.html</a> - Esercizio su is has.</li>
+    <li><a href="./esercizi/62-css-select.html">62-css-select.html</a> - Esercizio su select HTML.</li>
+    <li><a href="./esercizi/63-css-balance.html">63-css-balance.html</a> - Esercizio su text wrap balance.</li>
+    <li><a href="./esercizi/64-css-content-visibility.html">64-css-content-visibility.html</a> - Esercizio su content visibility.</li>
     <li><a href="./esercizi/MoodleTestCSS.xml">MoodleTestCSS.xml</a> - Test CSS per Moodle.</li>
 </ul>
 
